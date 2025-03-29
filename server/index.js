@@ -125,8 +125,8 @@ const route0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: root,
   links
 }, Symbol.toStringTag, { value: "Module" }));
-const logoDark = "/brqueiroz-site/assets/logo-dark-pX2395Y0.svg";
-const logoLight = "/brqueiroz-site/assets/logo-light-CVbx2LBR.svg";
+const logoDark = "/brqgit.github.io//assets/logo-dark-pX2395Y0.svg";
+const logoLight = "/brqgit.github.io//assets/logo-light-CVbx2LBR.svg";
 function Welcome() {
   return /* @__PURE__ */ jsx("main", { className: "flex items-center justify-center pt-16 pb-4", children: /* @__PURE__ */ jsxs("div", { className: "flex-1 flex flex-col items-center gap-16 min-h-0", children: [
     /* @__PURE__ */ jsx("header", { className: "flex flex-col items-center gap-9", children: /* @__PURE__ */ jsxs("div", { className: "w-[500px] max-w-[100vw] p-4", children: [
@@ -228,14 +228,14 @@ const route1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: home,
   meta
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "/brqueiroz-site/assets/entry.client-CzTfhbDx.js", "imports": ["/brqueiroz-site/assets/chunk-XJI4KG32-BB7rAF7I.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/brqueiroz-site/assets/root-DTsB07tw.js", "imports": ["/brqueiroz-site/assets/chunk-XJI4KG32-BB7rAF7I.js", "/brqueiroz-site/assets/with-props-BOa4g__A.js"], "css": ["/brqueiroz-site/assets/root-DU88ZMEV.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/brqueiroz-site/assets/home-BvM7r8sJ.js", "imports": ["/brqueiroz-site/assets/with-props-BOa4g__A.js", "/brqueiroz-site/assets/chunk-XJI4KG32-BB7rAF7I.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/brqueiroz-site/assets/manifest-6fe14b48.js", "version": "6fe14b48" };
+const serverManifest = { "entry": { "module": "/brqgit.github.io//assets/entry.client-CzTfhbDx.js", "imports": ["/brqgit.github.io//assets/chunk-XJI4KG32-BB7rAF7I.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": true, "module": "/brqgit.github.io//assets/root-DTsB07tw.js", "imports": ["/brqgit.github.io//assets/chunk-XJI4KG32-BB7rAF7I.js", "/brqgit.github.io//assets/with-props-BOa4g__A.js"], "css": ["/brqgit.github.io//assets/root-DU88ZMEV.css"], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasErrorBoundary": false, "module": "/brqgit.github.io//assets/home-D_jSmgZ2.js", "imports": ["/brqgit.github.io//assets/with-props-BOa4g__A.js", "/brqgit.github.io//assets/chunk-XJI4KG32-BB7rAF7I.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/brqgit.github.io//assets/manifest-39fa3c0e.js", "version": "39fa3c0e" };
 const assetsBuildDirectory = "build/client";
 const basename = "/";
 const future = { "unstable_middleware": false, "unstable_optimizeDeps": false, "unstable_splitRouteModules": false, "unstable_viteEnvironmentApi": false };
 const ssr = true;
 const isSpaMode = false;
 const prerender = [];
-const publicPath = "/brqueiroz-site/";
+const publicPath = "/brqgit.github.io//";
 const entry = { module: entryServer };
 const routes = {
   "root": {
