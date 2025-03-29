@@ -7,5 +7,6 @@ export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
     server: {
       port: 8080
-    }
+    },
+    base: "/brqueiroz-site/";
 });
