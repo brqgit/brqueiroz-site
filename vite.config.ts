@@ -8,5 +8,5 @@ export default defineConfig({
     server: {
       port: 8080
     },
-    base: "/brqgit.github.io//",
+    base: "/brqueiroz-site/",
 });
