@@ -43,7 +43,7 @@ const Home: React.FC = () => {
           loop
           muted
         >
-          <source src="./bg-video.mp4" type="video/mp4" />
+          <source src="./bgVideo.mp4" type="video/mp4" />
         </video>
         <div className="absolute top-0 left-0 w-full h-[100%] bg-[rgba(15,19,28,0.5)]"></div>
 
