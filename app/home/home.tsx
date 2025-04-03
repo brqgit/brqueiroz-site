@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-// import './Home.css';
 
+import AppNavbar from "~/components/app-navbar";
 import LogoCarousel from '~/components/logo-carousel';
 import Card from 'app/components/card';
-import ImageCarousel from "~/components/image-carousel";
 import TestimonialCard from "~/components/testimonial-card";
 import ServiceCard from "~/components/service-card";
-import { Award, CheckCircle, Clock, Cloud, Code, Cpu, Laptop, LineChart, Mail, MapPin, MessageSquare, Network, Phone, Server, Shield, Users, Zap } from "lucide-react";
 import StatCard from "~/components/star-card";
-import ServiceCaseCard from "~/components/service-case-card";
-import { Carousel } from "~/components/carousel";
-import AppNavbar from "~/components/app-navbar";
+
+import { Award, CheckCircle, Clock, Cloud, Cpu, Laptop, LineChart, Mail, MapPin, MessageSquare, Network, Phone, Server, Shield, Users, Zap } from "lucide-react";
+import { Carousel } from "../components/carousel";
 
 const Home: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,10 +20,10 @@ const Home: React.FC = () => {
   ];
 
   const images = [
-    "public/placeholder.svg?height=400&width=600&text=Imagem+1",
-    "public/placeholder.svg?height=400&width=600&text=Imagem+2",
-    "public/placeholder.svg?height=400&width=600&text=Imagem+3",
-    "public/placeholder.svg?height=400&width=600&text=Imagem+4",
+    "./placeholder.svg?height=400&width=600&text=Imagem+1",
+    "./placeholder.svg?height=400&width=600&text=Imagem+2",
+    "./placeholder.svg?height=400&width=600&text=Imagem+3",
+    "./placeholder.svg?height=400&width=600&text=Imagem+4",
   ]
 
   const handleNext = () => {
@@ -45,7 +43,7 @@ const Home: React.FC = () => {
           loop
           muted
         >
-          <source src="bg-video.mp4" type="video/mp4" />
+          <source src="./bg-video.mp4" type="video/mp4" />
         </video>
         <div className="absolute top-0 left-0 w-full h-[100%] bg-[rgba(15,19,28,0.5)]"></div>
 
@@ -77,7 +75,7 @@ const Home: React.FC = () => {
               <div className="w-[45%] flex flex-col items-center justify-center">
                 <div className="w-full overflow-hidden relative">
                   <Card
-                    imageSrc="public/placeholder.svg"
+                    imageSrc="./placeholder.svg"
                     imageAlt="Product image"
                     title={slides[currentSlide].title}
                     description={slides[currentSlide].description}
@@ -292,7 +290,7 @@ const Home: React.FC = () => {
                   name="Empresa Lorem Ipsum Ltda"
                   position="Setor Lorem Ipsum"
                   testimonial="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                  image="public/placeholder.svg"
+                  image="./placeholder.svg"
                 />
               </div>
               <div className="w-[400px]">
@@ -300,7 +298,7 @@ const Home: React.FC = () => {
                   name="Empresa Lorem Ipsum Ltda"
                   position="Setor Lorem Ipsum"
                   testimonial="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                  image="public/placeholder.svg"
+                  image="./placeholder.svg"
                 />
               </div>
               <div className="w-[400px]">
@@ -308,7 +306,7 @@ const Home: React.FC = () => {
                   name="Empresa Lorem Ipsum Ltda"
                   position="Setor Lorem Ipsum"
                   testimonial="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-                  image="public/placeholder.svg"
+                  image="./placeholder.svg"
                 />
               </div>
             </Carousel>
