@@ -7,14 +7,14 @@
 
 @font-face {
   font-family: 'Eurostile Regular';
-  src: url('public/fonts/Eurostile-Regular.otf') format('woff2');
+  src: url('./fonts/Eurostile-Regular.otf') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Eurostile Black';
-  src: url('public/fonts/Eurostile-Black.otf') format('woff2');
+  src: url('./fonts/Eurostile-Black.otf') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
