@@ -42,7 +42,7 @@ const AppNavbar: React.FC = () => {
     >
       <div className="w-full max-w-7xl mx-auto px-5 flex justify-between items-center">
         <div className="text-2xl font-bold">
-          <img src="public/Logo_Branco.svg" alt="" className="w-45 h-auto" />
+          <img src="./Logo_Branco.svg" alt="" className="w-45 h-auto" />
         </div>
         <ul className="list-none flex m-0 p-0">
           {["SOBRE NÓS", "SERVIÇOS", "PARCEIROS", "CASES", "CONTATO"].map((item) => (
