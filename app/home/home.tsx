@@ -107,7 +107,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="flex justify-center items-center mb-10">
-              <img src="brqueiroz_logo-preto_1.5s.webp" alt="" width="300" height="300" />
+              <img src="./brqueiroz_logo-preto_1.5s.webp" alt="" width="300" height="300" />
             </div>
             <h2 className="text-3xl font-bold">
               SOBRE <span className="text-blue-600">NÓS</span>
@@ -326,7 +326,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <img src="public/Logo_Branco.svg" alt="BR Queiroz Logo" width="180" height="50" className="h-18 w-auto mb-4" />
+              <img src="./Logo_Branco.svg" alt="BR Queiroz Logo" width="180" height="50" className="h-18 w-auto mb-4" />
               <p className="text-gray-400 text-sm">
                 Soluções em tecnologia da informação há mais de 20 anos, trazendo o que há de melhor para Ribeirão Preto
                 e região.
