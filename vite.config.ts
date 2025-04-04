@@ -11,15 +11,5 @@ export default defineConfig({
       usePolling: true,
     },
   },
-  // build: {
-  //   outDir: "dist",
-  //   rollupOptions: {
-  //     output: {
-  //       entryFileNames: "index.js",
-  //       chunkFileNames: "[name].js",
-  //       assetFileNames: "[name].[ext]",
-  //     },
-  //   },
-  // },
   base: "./",
 });
