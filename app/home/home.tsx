@@ -6,9 +6,9 @@ import Card from 'app/components/card';
 import TestimonialCard from "~/components/testimonial-card";
 import ServiceCard from "~/components/service-card";
 import StatCard from "~/components/star-card";
+import { Carousel } from "~/components/carousel";
 
 import { Award, CheckCircle, Clock, Cloud, Cpu, Laptop, LineChart, Mail, MapPin, MessageSquare, Network, Phone, Server, Shield, Users, Zap } from "lucide-react";
-import { Carousel } from "../components/carousel";
 
 const Home: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,10 +20,10 @@ const Home: React.FC = () => {
   ];
 
   const images = [
-    "./placeholder.svg?height=400&width=600&text=Imagem+1",
-    "./placeholder.svg?height=400&width=600&text=Imagem+2",
-    "./placeholder.svg?height=400&width=600&text=Imagem+3",
-    "./placeholder.svg?height=400&width=600&text=Imagem+4",
+    "/placeholder.svg?height=400&width=600&text=Imagem+1",
+    "/placeholder.svg?height=400&width=600&text=Imagem+2",
+    "/placeholder.svg?height=400&width=600&text=Imagem+3",
+    "/placeholder.svg?height=400&width=600&text=Imagem+4",
   ]
 
   const handleNext = () => {
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
           loop
           muted
         >
-          <source src="./bgVideo.mp4" type="video/mp4" />
+          <source src="./bg-video.mp4" type="video/mp4" />
         </video>
         <div className="absolute top-0 left-0 w-full h-[100%] bg-[rgba(15,19,28,0.5)]"></div>
 

@@ -9,14 +9,14 @@ export default function LogoCarousel() {
   const speed = 1
 
   const logos = [
-    { id: 1, src: "/placeholder.svg?height=80&width=160", alt: "Company 1" },
-    { id: 2, src: "/placeholder.svg?height=80&width=160", alt: "Company 2" },
-    { id: 3, src: "/placeholder.svg?height=80&width=160", alt: "Company 3" },
-    { id: 4, src: "/placeholder.svg?height=80&width=160", alt: "Company 4" },
-    { id: 5, src: "/placeholder.svg?height=80&width=160", alt: "Company 5" },
-    { id: 6, src: "/placeholder.svg?height=80&width=160", alt: "Company 6" },
-    { id: 7, src: "/placeholder.svg?height=80&width=160", alt: "Company 7" },
-    { id: 8, src: "/placeholder.svg?height=80&width=160", alt: "Company 8" },
+    { id: 1, src: "./placeholder.svg?height=80&width=160", alt: "Company 1" },
+    { id: 2, src: "./placeholder.svg?height=80&width=160", alt: "Company 2" },
+    { id: 3, src: "./placeholder.svg?height=80&width=160", alt: "Company 3" },
+    { id: 4, src: "./placeholder.svg?height=80&width=160", alt: "Company 4" },
+    { id: 5, src: "./placeholder.svg?height=80&width=160", alt: "Company 5" },
+    { id: 6, src: "./placeholder.svg?height=80&width=160", alt: "Company 6" },
+    { id: 7, src: "./placeholder.svg?height=80&width=160", alt: "Company 7" },
+    { id: 8, src: "./placeholder.svg?height=80&width=160", alt: "Company 8" },
   ]
 
   const logoSpacing = 48;

@@ -11,7 +11,7 @@ export default function TestimonialCard({ name, position, testimonial, image }: 
       <div className="flex items-center gap-4 mb-4">
         {image && (
           <img
-            src={image || "public/placeholder.svg"}
+            src={image || "./placeholder.svg"}
             alt={name}
             width={60}
             height={60}

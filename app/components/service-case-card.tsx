@@ -16,7 +16,7 @@ export default function ServiceCaseCard({
       <div className="flex items-center gap-4 mb-4">
         {companyLogo && (
           <img
-            src={companyLogo || "public/placeholder.svg"}
+            src={companyLogo || "./placeholder.svg"}
             alt={companyName}
             width={60}
             height={60}

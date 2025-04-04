@@ -12,7 +12,7 @@ interface CardProps {
 }
 
 export default function Card({
-  imageSrc = "/placeholder.svg?height=250&width=500",
+  imageSrc = "./placeholder.svg?height=250&width=500",
   imageAlt = "Card cover image",
   title = "Card Title",
   description = "This is a description for this card component",
