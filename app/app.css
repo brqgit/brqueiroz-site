@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@font-face {
+  font-family: 'Eurostile Regular';
+  src: url('/fonts/Eurostile-Regular.otf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Eurostile Black';
+  src: url('/fonts/Eurostile-Black.otf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+html,
+body {
+  @apply bg-white;
+
+  @media (prefers-color-scheme: light) {
+    color-scheme: light;
+  }
+}
