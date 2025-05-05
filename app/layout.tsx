@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from "react-router";
 import AppNavbar from "~/components/app-navbar";
-import AppFooter from "./components/app-footer";
+import AppHeader from "~/components/app-header";
+import AppFooter from "~/components/app-footer";
 
 export default function AppLayout() {
   const location = useLocation();
@@ -9,9 +10,12 @@ export default function AppLayout() {
   return (
     <div>
       {
-        isNotServiceRoute &&
-        <AppNavbar />
-      }
+        isNotServiceRoute && (
+          <>
+            <AppNavbar />
+            <AppHeader />
+          </>
+        )}
       <main>
         <Outlet />
       </main>

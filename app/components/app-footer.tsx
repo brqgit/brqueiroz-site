@@ -1,6 +1,9 @@
 import { Mail, MapPin, MessageSquare, Phone } from "lucide-react";
+import { getAllServices } from "~/lib/services";
 
 export default function AppFooter() {
+    const services = getAllServices();
+
     return (
         <footer id="contato" className="bg-[#0a1525] text-white py-12 px-4 md:px-8 lg:px-16" >
             <div className="max-w-7xl mx-auto">
@@ -23,7 +26,7 @@ export default function AppFooter() {
                     <div>
                         <h3 className="font-bold text-lg mb-4">Serviços</h3>
                         <ul className="space-y-2">
-                            <li>
+                            {/* <li>
                                 <a href="#" className="text-gray-400 hover:text-white text-sm">
                                     Consultoria
                                 </a>
@@ -52,7 +55,17 @@ export default function AppFooter() {
                                 <a href="#" className="text-gray-400 hover:text-white text-sm">
                                     Suporte Técnico
                                 </a>
-                            </li>
+                            </li> */}
+                            {services.map((service) => (
+                                <li key={service.slug}>
+                                    <a
+                                        href={`/services?service=${service.slug}`}
+                                        className="text-gray-400 hover:text-white text-sm"
+                                    >
+                                        {service.title}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
@@ -92,11 +105,11 @@ export default function AppFooter() {
                         <ul className="space-y-2">
                             <li className="flex items-center justify-center md:justify-start gap-2">
                                 <Phone className="h-4 w-4 text-blue-400" />
-                                <span className="text-gray-400 text-sm">+55 (16) 3333-0065</span>
+                                <span className="text-gray-400 text-sm">+55 (16) 3555-0065</span>
                             </li>
                             <li className="flex items-center justify-center md:justify-start gap-2">
                                 <MessageSquare className="h-4 w-4 text-blue-400" />
-                                <span className="text-gray-400 text-sm">+55 (16) 99159-1078</span>
+                                <span className="text-gray-400 text-sm">+55 (16) 99199-1078</span>
                             </li>
                             <li className="flex items-center justify-center md:justify-start gap-2">
                                 <Mail className="h-4 w-4 text-blue-400" />

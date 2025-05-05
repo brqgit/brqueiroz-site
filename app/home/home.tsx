@@ -1,9 +1,10 @@
-import React, { useState } from "react";
 import LogoCarousel from "~/components/logo-carousel";
 import ServiceCard from "~/components/service-card";
 import StatCard from "~/components/star-card";
 import TestimonialCard from "~/components/testimonial-card";
+import { getAllServices } from "~/lib/services";
 import { Carousel } from "~/components/carousel";
+
 import {
     Award,
     CheckCircle,
@@ -16,17 +17,21 @@ import {
     Server,
     Shield,
     Users,
+    X,
     Zap,
 } from "lucide-react";
-import { motion } from "framer-motion";
-import AppHeader from "~/components/app-header";
+import { AnimatePresence, motion } from "framer-motion";
+import AboutUs from "~/about-us/about-us";
+import { useState } from "react";
 
 export default function HomePage() {
+    const services = getAllServices();
+    const [showAbout, setShowAbout] = useState(false);
+
     return (
         <>
-            <AppHeader />
             <LogoCarousel />
-            <section id="sobre-nós" className="py-16 px-4 md:px-8 lg:px-16 bg-white">
+            <section id="sobre-nós" className="py-16 px-4 md:px-8 lg:px-16 bg-white overflow-hidden">
                 <motion.div
                     className="max-w-7xl mx-auto"
                     initial={{ opacity: 0, y: 50 }}
@@ -74,65 +79,112 @@ export default function HomePage() {
                                     </p>
                                 </motion.div>
                                 <motion.div
-                                    className="relative h-[500px] space-y-6"
+                                    className="relative h-auto md:h-[500px] flex flex-col md:space-y-6 md:flex-row md:justify-center md:items-center"
                                     initial={{ opacity: 0, x: 50 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     transition={{ duration: 0.8 }}
                                     viewport={{ once: true, amount: 0.2 }}
                                 >
                                     <motion.div
-                                        className="absolute top-[-5%] left-[30%] w-60 h-60 flex justify-center items-center rounded-lg"
+                                        className="w-60 h-60 flex justify-center items-center rounded-lg mx-auto mb-4 md:mb-0 md:absolute md:top-[-5%] md:left-[30%]"
                                         initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1 }}
                                         viewport={{ once: true, amount: 0.2 }}
                                         whileHover={{ scale: 1.2 }}
                                         whileTap={{ scale: 0.8 }}
                                     >
-                                        <img src="/about/4.jpg" alt="Imagem 1" className="w-full h-full object-cover rounded-lg shadow-lg" />
+                                        <img src="/about/22.jpeg" alt="Imagem 1" className="w-full h-full object-cover rounded-lg shadow-lg" />
                                     </motion.div>
                                     <motion.div
-                                        className="absolute top-[50%] left-[30%] w-60 h-60 flex justify-center items-center rounded-lg transform -translate-x-1/2"
+                                        className="w-60 h-60 flex justify-center items-center rounded-lg mx-auto mb-4 md:mb-0 md:absolute md:top-[50%] md:left-[30%] md:transform md:-translate-x-1/2"
                                         initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1 }}
                                         viewport={{ once: true, amount: 0.2 }}
                                         whileHover={{ scale: 1.2 }}
                                         whileTap={{ scale: 0.8 }}
                                     >
-                                        <img src="/about/5.jpg" alt="Imagem 2" className="w-full h-full object-cover rounded-lg shadow-lg" />
+                                        <img src="/about/44.png" alt="Imagem 2" className="w-full h-full object-cover rounded-lg shadow-lg" />
                                     </motion.div>
                                     <motion.div
-                                        className="absolute top-[60%] left-[70%] w-44 h-44 flex justify-center items-center rounded-lg transform -translate-x-1/2"
+                                        className="w-60 h-60 flex justify-center items-center rounded-lg mx-auto mb-4 md:mb-0 md:absolute md:top-[60%] md:left-[77%] md:transform md:-translate-x-1/2"
                                         initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1 }}
                                         viewport={{ once: true, amount: 0.2 }}
                                         whileHover={{ scale: 1.2 }}
                                         whileTap={{ scale: 0.8 }}
                                     >
-                                        <img src="/about/3.png" alt="Imagem 4" className="w-full h-full object-cover rounded-lg shadow-lg" />
+                                        <img src="/about/33.png" alt="Imagem 4" className="w-full h-full object-cover rounded-lg shadow-lg" />
                                     </motion.div>
                                     <motion.div
-                                        className="absolute top-[20%] left-[90%] w-40 h-40 flex justify-center items-center rounded-lg transform -translate-x-1/2"
+                                        className="w-60 h-60 flex justify-center items-center rounded-lg mx-auto md:mb-0 md:absolute md:top-[2%] md:left-[95%] md:transform md:-translate-x-1/2"
                                         initial={{ opacity: 0 }}
                                         whileInView={{ opacity: 1 }}
                                         viewport={{ once: true, amount: 0.2 }}
                                         whileHover={{ scale: 1.2 }}
                                         whileTap={{ scale: 0.8 }}
                                     >
-                                        <img src="/placeholder.svg" alt="Imagem 5" className="w-full h-full object-cover rounded-lg shadow-lg" />
+                                        <img src="/about/11.jpeg" alt="Imagem 5" className="w-full h-full object-cover rounded-lg shadow-lg" />
                                     </motion.div>
                                 </motion.div>
                             </div>
                         </div>
                         <div className="mt-12 text-center">
-                            <button
+                            {/* <button
                                 className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                             >
                                 Saiba mais
+                            </button> */}
+                            <button
+                                className="inline-flex items-center justify-center px-6 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-medium text-base transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 transform hover:scale-105"
+                                onClick={() => setShowAbout(true)}
+                            >
+                                Saiba mais
+                                <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                                </svg>
                             </button>
                         </div>
                     </div>
                 </motion.div>
             </section>
+
+            <AnimatePresence>
+                {showAbout && (
+                    <motion.div
+                        className="fixed inset-0 z-50 bg-white"
+                        initial={{ opacity: 0, scale: 0.96 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.96 }}
+                        transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+                        style={{
+                            overflowY: "auto",
+                            scrollbarWidth: "none",
+                            msOverflowStyle: "none",
+                        }}
+                    >
+                        <style>
+                            {`
+                .hide-scrollbar::-webkit-scrollbar {
+                    display: none;
+                }
+                `}
+                        </style>
+                        <div className="absolute top-0 right-0 p-6 z-10">
+                            <button
+                                className="text-white font-bold text-lg"
+                                onClick={() => setShowAbout(false)}
+                                aria-label="Fechar"
+                            >
+                                <X className="h-14 w-14" />
+                            </button>
+                        </div>
+                        <div className="w-full h-full flex flex-col hide-scrollbar">
+                            <AboutUs />
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
             <section className="py-12 bg-[#0a1525]">
                 <motion.div
                     className="max-w-7xl mx-auto px-4 md:px-8"
@@ -170,54 +222,16 @@ export default function HomePage() {
                     </div>
                     <div>
                         <Carousel itemsPerPage={4} showArrows={false} preserveGrid={true} gridClassName="grid md:grid-cols-2 gap-8">
-                            <ServiceCard
-                                title="Microsoft 365"
-                                description="Transforme sua empresa com nossa consultoria em Microsoft 365. Analisamos sua infraestrutura, implementamos soluções personalizadas e otimizamos processos, colaborando para aumentar a produtividade e eficiência."
-                                icon={<Laptop className="h-10 w-10 text-[#1c5abd]" />}
-                                path=""
-                            />
-                            <ServiceCard
-                                title="Consultoria"
-                                description="Planeje a melhor rota p/ soluções de qualidade. Nossa equipe de especialistas analisa sua infraestrutura atual e propõe melhorias estratégicas para otimizar seus recursos tecnológicos."
-                                icon={<LineChart className="h-10 w-10 text-[#1c5abd]" />}
-                                path=""
-                            />
-                            <ServiceCard
-                                title="Infraestrutura"
-                                description="Estrutura essencial para um crescimento sólido. Implementamos e gerenciamos toda a infraestrutura de TI da sua empresa, garantindo estabilidade, segurança e alto desempenho."
-                                icon={<Server className="h-10 w-10 text-[#1c5abd]" />}
-                                path=""
-                            />
-                            <ServiceCard
-                                title="Segurança da Informação"
-                                description="Proteja seus dados e sistemas contra ameaças digitais. Oferecemos soluções completas de segurança, incluindo firewall, antivírus, backup, criptografia e treinamento de usuários."
-                                icon={<Shield className="h-10 w-10 text-[#1c5abd]" />}
-                                path=""
-                            />
-                            <ServiceCard
-                                title="Cloud Computing"
-                                description="Migre seus sistemas para a nuvem e ganhe flexibilidade, escalabilidade e redução de custos. Somos especialistas em soluções Microsoft Azure."
-                                icon={<Cloud className="h-10 w-10 text-[#1c5abd]" />}
-                                path=""
-                            />
-                            <ServiceCard
-                                title="Redes e Conectividade"
-                                description="Projetos e implementação de redes estruturadas, wireless, VPN, SD-WAN e soluções de conectividade para garantir a comunicação eficiente entre seus sistemas e colaboradores."
-                                icon={<Network className="h-10 w-10 text-[#1c5abd]" />}
-                                path=""
-                            />
-                            <ServiceCard
-                                title="Suporte Técnico"
-                                description="Suporte técnico especializado e proativo, com atendimento remoto e presencial, para resolver problemas rapidamente e minimizar o impacto em suas operações."
-                                icon={<Zap className="h-10 w-10 text-[#1c5abd]" />}
-                                path=""
-                            />
-                            <ServiceCard
-                                title="Virtualização"
-                                description="Otimize seus recursos de hardware com soluções de virtualização de servidores, desktops e aplicações, aumentando a eficiência e reduzindo custos operacionais."
-                                icon={<Cpu className="h-10 w-10 text-[#1c5abd]" />}
-                                path=""
-                            />
+
+                            {services.map((service) => (
+                                <ServiceCard
+                                    key={service.slug}
+                                    title={service.title}
+                                    description={service.description}
+                                    icon={service.icon}
+                                    path={`/services/${service.slug}`}
+                                />
+                            ))}
                         </Carousel>
                     </div>
                 </motion.div>
@@ -241,22 +255,42 @@ export default function HomePage() {
                     </div>
 
                     <Carousel itemsPerPage={4} showArrows={false} preserveGrid={true} gridClassName="grid md:grid-cols-3 gap-8">
-                        <TestimonialCard
-                            name="Empresa Lorem Ipsum"
-                            position="Setor Financeiro"
-                            testimonial="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        {/* <TestimonialCard
+                            name="Migração de Infraestrutura de TI"
+                            position="Eventos e Turismo"
+                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mail foram transferidas com sucesso, incluindo assinaturas, agendas e permissões. Além disso, a empresa reformulou sua estrutura de e-mails e comunicação, segmentando empresas em diferentes Tenants do Office365 e ativando novos recursos de compartilhamento de arquivos via SharePoint. Também foi implementado o Microsoft Teams para reuniões via áudio e videoconferência. Com essas mudanças, a empresa agora possui uma infraestrutura de TI moderna e eficiente, que apoia suas operações diárias e contribui para seu crescimento contínuo."
                             image="/placeholder.svg"
                         />
                         <TestimonialCard
-                            name="Empresa Lorem Ipsum"
-                            position="Setor Industrial"
-                            testimonial="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            name="Migração de Infraestrutura de TI"
+                            position="Eventos e Turismo"
+                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mail foram transferidas com sucesso, incluindo assinaturas, agendas e permissões. Além disso, a empresa reformulou sua estrutura de e-mails e comunicação, segmentando empresas em diferentes Tenants do Office365 e ativando novos recursos de compartilhamento de arquivos via SharePoint. Também foi implementado o Microsoft Teams para reuniões via áudio e videoconferência. Com essas mudanças, a empresa agora possui uma infraestrutura de TI moderna e eficiente, que apoia suas operações diárias e contribui para seu crescimento contínuo."
                             image="/placeholder.svg"
                         />
                         <TestimonialCard
-                            name="Empresa Lorem Ipsum"
-                            position="Setor de Saúde"
-                            testimonial="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                            name="Migração de Infraestrutura de TI"
+                            position="Eventos e Turismo"
+                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mail foram transferidas com sucesso, incluindo assinaturas, agendas e permissões. Além disso, a empresa reformulou sua estrutura de e-mails e comunicação, segmentando empresas em diferentes Tenants do Office365 e ativando novos recursos de compartilhamento de arquivos via SharePoint. Também foi implementado o Microsoft Teams para reuniões via áudio e videoconferência. Com essas mudanças, a empresa agora possui uma infraestrutura de TI moderna e eficiente, que apoia suas operações diárias e contribui para seu crescimento contínuo."
+                            image="/placeholder.svg"
+                        /> */}
+
+                        {/* O trecho destacado contém **1.396 caracteres**, incluindo espaços. */}
+                        <TestimonialCard
+                            name="Migração de Infraestrutura de TI"
+                            position="Eventos e Turismo"
+                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mai"
+                            image="/placeholder.svg"
+                        />
+                        <TestimonialCard
+                            name="Migração de Infraestrutura de TI"
+                            position="Eventos e Turismo"
+                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mai"
+                            image="/placeholder.svg"
+                        />
+                        <TestimonialCard
+                            name="Migração de Infraestrutura de TI"
+                            position="Eventos e Turismo"
+                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mai"
                             image="/placeholder.svg"
                         />
                     </Carousel>

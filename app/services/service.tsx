@@ -61,7 +61,12 @@ export default function ServicePage() {
                             </div>
                         </div>
                         <div className="flex justify-center">
-                            <div className="bg-white/10 p-8 rounded-full">{service.icon}</div>
+                            {/* <div className="bg-white/10 p-8 rounded-full">{service.icon}</div> */}
+                            <img
+                                src={service.image}
+                                alt={service.title}
+                                className="bg-white/10 p-2 rounded-full max-h-64 object-contain"
+                            />
                         </div>
                     </div>
                 </div>
@@ -82,10 +87,10 @@ export default function ServicePage() {
                             </p>
                             <div className="space-y-3">
                                 <div className="flex items-center gap-2">
-                                    <span className="text-gray-700">+55 (16) 3333-0065</span>
+                                    <span className="text-gray-700">+55 (16) 3555-0065</span>
                                 </div>
                                 <div className="flex items-center gap-2">
-                                    <span className="text-gray-700">+55 (16) 99159-1078</span>
+                                    <span className="text-gray-700">+55 (16) 99199-1078</span>
                                 </div>
                             </div>
                             <button className="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
