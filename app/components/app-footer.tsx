@@ -130,6 +130,11 @@ export default function AppFooter() {
                         © {new Date().getFullYear()} BRQueiroz. Todos os direitos reservados.
                     </p>
                     <div className="flex gap-4 mt-4 md:mt-0">
+                        <a href="#" className="text-gray-400 hover:text-white" aria-label="LinkedIn">
+                            <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.845-1.563 3.043 0 3.604 2.004 3.604 4.609v5.587z" />
+                            </svg>
+                        </a>
                         <a href="#" className="text-gray-400 hover:text-white">
                             <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
@@ -148,12 +153,12 @@ export default function AppFooter() {
                                 />
                             </svg>
                         </a>
-                        <a href="#" className="text-gray-400 hover:text-white">
+                        {/* <a href="#" className="text-gray-400 hover:text-white">
                             <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                             </svg>
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white">
+                        </a> */}
+                        {/* <a href="#" className="text-gray-400 hover:text-white">
                             <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
                                     fillRule="evenodd"
@@ -161,8 +166,8 @@ export default function AppFooter() {
                                     clipRule="evenodd"
                                 />
                             </svg>
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white">
+                        </a> */}
+                        {/* <a href="#" className="text-gray-400 hover:text-white">
                             <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
                                     fillRule="evenodd"
@@ -170,7 +175,7 @@ export default function AppFooter() {
                                     clipRule="evenodd"
                                 />
                             </svg>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
             </div>

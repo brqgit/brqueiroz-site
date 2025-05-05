@@ -229,7 +229,7 @@ export default function HomePage() {
                                     title={service.title}
                                     description={service.description}
                                     icon={service.icon}
-                                    path={`/services/${service.slug}`}
+                                    path={service.slug}
                                 />
                             ))}
                         </Carousel>

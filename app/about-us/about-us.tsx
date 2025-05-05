@@ -1,6 +1,9 @@
 import { Check, ChevronRight } from "lucide-react"
+import { getPartnersLogos } from "~/lib/partners-logos";
 
 export default function AboutUs() {
+  const partners = getPartnersLogos();
+
   return (
     <div className="w-full bg-gradient-to-br from-[#0a1525] to-[#0a0f18] text-white">
       <div className="container mx-auto px-4 py-16 md:py-24">
@@ -19,7 +22,7 @@ export default function AboutUs() {
               informação, trazendo o que há de melhor em soluções de T.I. para Ribeirão Preto e região.
             </p>
             <a
-              href="/contato"
+              href="mailto:contato@brqueiroz.com.br"
               className="inline-flex items-center bg-[#1e6cd3] hover:bg-[#155ab9] transition-colors px-6 py-3 rounded-md font-medium"
             >
               Entre em contato
@@ -94,7 +97,7 @@ export default function AboutUs() {
           </p>
         </div>
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-          <div className="w-32 h-16 bg-[#111a2e] rounded-lg flex items-center justify-center p-4">
+          {/* <div className="w-32 h-16 bg-[#111a2e] rounded-lg flex items-center justify-center p-4">
             <p className="font-bold text-sm text-center">Microsoft</p>
           </div>
           <div className="w-32 h-16 bg-[#111a2e] rounded-lg flex items-center justify-center p-4">
@@ -105,7 +108,15 @@ export default function AboutUs() {
           </div>
           <div className="w-32 h-16 bg-[#111a2e] rounded-lg flex items-center justify-center p-4">
             <p className="font-bold text-sm text-center">Legrand</p>
-          </div>
+          </div> */}
+          {partners.map((partner) => (
+            <div
+              key={partner.alt}
+              className="w-32 h-16 bg-[#111a2e] rounded-lg flex items-center justify-center p-4"
+            >
+              <p className="font-bold text-sm text-center">{partner.alt}</p>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -121,7 +132,7 @@ export default function AboutUs() {
             </div>
             <div className="flex justify-center md:justify-end">
               <a
-                href="/contato"
+                href="mailto:contato@brqueiroz.com.br"
                 className="inline-flex items-center bg-white text-[#1e6cd3] hover:bg-gray-100 transition-colors px-6 py-3 rounded-md font-medium"
               >
                 Fale Conosco
