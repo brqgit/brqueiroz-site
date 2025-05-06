@@ -274,23 +274,23 @@ export default function HomePage() {
                             image="/placeholder.svg"
                         /> */}
 
-                        {/* O trecho destacado contém **1.396 caracteres**, incluindo espaços. */}
+                        {/* O trecho destacado contém **210 caracteres**, incluindo espaços. */}
                         <TestimonialCard
                             name="Migração de Infraestrutura de TI"
                             position="Eventos e Turismo"
-                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mai"
+                            testimonial="A BRQueiroz migrou 700 caixas de e-mail para o Exchange Online e transferiu 14TB de dados para o SharePoint Online, modernizando a infraestrutura de TI da empresa de eventos e turismo, incluindo novos recursos como Microsoft Teams."
                             image="/placeholder.svg"
                         />
                         <TestimonialCard
                             name="Migração de Infraestrutura de TI"
                             position="Eventos e Turismo"
-                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mai"
+                            testimonial="A BRQueiroz migrou 700 caixas de e-mail para o Exchange Online e transferiu 14TB de dados para o SharePoint Online, modernizando a infraestrutura de TI da empresa de eventos e turismo, incluindo novos recursos como Microsoft Teams."
                             image="/placeholder.svg"
                         />
                         <TestimonialCard
                             name="Migração de Infraestrutura de TI"
                             position="Eventos e Turismo"
-                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mai"
+                            testimonial="A BRQueiroz migrou 700 caixas de e-mail para o Exchange Online e transferiu 14TB de dados para o SharePoint Online, modernizando a infraestrutura de TI da empresa de eventos e turismo, incluindo novos recursos como Microsoft Teams."
                             image="/placeholder.svg"
                         />
                     </Carousel>

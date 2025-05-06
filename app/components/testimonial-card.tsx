@@ -9,7 +9,7 @@ export default function TestimonialCard({ name, position, testimonial, image }: 
   return (
     <div className="bg-white p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
       <div className="flex items-center gap-4 mb-4">
-        {image && (
+        {/* {image && (
           <img
             src={image || "/placeholder.svg"}
             alt={name}
@@ -17,7 +17,7 @@ export default function TestimonialCard({ name, position, testimonial, image }: 
             height={60}
             className="rounded-full"
           />
-        )}
+        )} */}
         <div>
           <h3 className="font-bold text-lg">{name}</h3>
           <p className="text-gray-600 text-sm">{position}</p>

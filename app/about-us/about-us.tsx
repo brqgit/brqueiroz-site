@@ -34,11 +34,12 @@ export default function AboutUs() {
           <div className="flex justify-center md:justify-end">
             <div className="relative w-80 h-80 md:w-96 md:h-96">
               <img
-                src="/placeholder.svg?height=400&width=400"
+                // src="/placeholder.svg?height=400&width=400"
+                src="/about/33.png"
                 alt="Tecnologia BRQueiroz"
                 width={400}
                 height={400}
-                className="rounded-lg object-cover"
+                className="w-[400px] h-[400px] rounded-lg object-cover"
               />
               <div className="absolute -bottom-6 -left-6 bg-[#1e6cd3] p-4 rounded-lg">
                 <p className="text-3xl font-bold">20+</p>

@@ -52,12 +52,16 @@ export default function ServicePage() {
                             <h1 className="text-4xl md:text-5xl font-bold">{service.title}</h1>
                             <p className="text-xl text-gray-300">{service.description}</p>
                             <div className="pt-4 flex flex-col sm:flex-row gap-4">
-                                <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+                                <a
+                                    href={`mailto:corp@brqueiroz.com.br?subject=Solicitar%20Orçamento%20-%20${encodeURIComponent(service.title)}`}
+                                    className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
                                     Solicitar Orçamento
-                                </button>
-                                <button className="px-4 py-2 border border-white text-white rounded-md hover:bg-white/10">
+                                </a>
+                                <a
+                                    href={`mailto:suportecst@brqueiroz.com.br?subject=Falar%20com%20Especialista%20-%20${encodeURIComponent(service.title)}`}
+                                    className="px-4 py-2 border border-white text-white rounded-md hover:bg-white/10">
                                     Falar com um Especialista
-                                </button>
+                                </a>
                             </div>
                         </div>
                         <div className="flex justify-center">
