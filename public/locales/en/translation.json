@@ -1,0 +1,75 @@
+{
+    "navbar": {
+        "about-us": "ABOUT US",
+        "services": "SERVICES",
+        "cases": "CASES",
+        "contact": "CONTACT"
+    },
+    "header": {
+        "h2": "THE TECHNOLOGY YOUR COMPANY NEEDS TO",
+        "h1": "REACH THE <0>NEXT LEVEL</0>",
+        "h4": "For a company to grow strong and solid, invest in the best available"
+    },
+    "home": {
+        "about": {
+            "p1": "BRQueiroz was conceived based on the constant growth that the digital world has had, which generates the need for objective and reliable solutions in the structuring and growth of a company.",
+            "p2": "Now with over 20 years in the market, BRQueiroz proves to be a solid and reliable company, bringing quality solutions to its clients. Our team is made up of highly qualified professionals certified in the main technologies in the market.",
+            "p3": "Our commitment is to offer personalized solutions that meet the specific needs of each client, ensuring maximum efficiency and security in all projects. We work with the best practices in the market and are always updated with the latest technological trends.",
+            "p4": "We serve companies of all sizes and segments, from small businesses to large corporations, always with the same level of excellence and dedication. Our mission is to be a strategic partner for our clients, helping them achieve their business objectives through technology."
+        }
+    },
+    "about-us": "<0>ABOUT</0> <1>US</1>",
+    "about": {
+        "h1": "<0>ABOUT</0> <1>US</1>",
+        "p1": "BRQueiroz was conceived based on the constant growth of the digital world, which generates the need for objective and reliable solutions in the structuring and growth of a company.",
+        "p2": "Now, with more than 20 years in the market, BRQueiroz stands out as a reference in information technology solutions, bringing the best IT solutions to Ribeirão Preto and the surrounding region.",
+        "values": [
+            {
+                "name": "Reliability",
+                "desc": "Commitment to reliable solutions"
+            },
+            {
+                "name": "Experience",
+                "desc": "Over 20 years in the IT market"
+            },
+            {
+                "name": "Engagement",
+                "desc": "Commitment to each project"
+            },
+            {
+                "name": "Security",
+                "desc": "Data and infrastructure protection"
+            }
+        ],
+        "h2": "<0>VALUES THAT</0><1></1><2>GUIDE US</2>",
+        "p3": " At BRQueiroz, our values are the pillars that support all our operations and relationships. They reflect who we are and how we work to offer the best solutions in information technology.",
+        "h2-partners": "<0>OUR</0> <1>PARTNERS</1>",
+        "p4": " We work with the best technology companies in the world to offer high-quality solutions to our clients.",
+        "ready-elevate-technologies": "Ready to elevate your technology?",
+        "p5": "Contact us and find out how we can help your company reach the next level with our technology solutions."
+    },
+    "talk-to-us": "Talk to us",
+    "contact-us": "Contact us",
+    "years-of-experience": "Years of experience",
+    "learn-more": "Learn more",
+    "articles": {
+        "1": {
+            "title": "The Invisible Force Behind Your Company's Technology",
+            "description": "The integrity of IT and automation infrastructure is essential for operational stability.",
+            "content": "BRQueiroz offers high-precision optical inspection to ensure the integrity of IT and industrial automation infrastructure, preventing invisible failures and increasing process reliability.",
+            "alt": "Image representing invisible technology"
+        },
+        "2": {
+            "title": "BRQueiroz Begins a New Era with LanTEK IV-S",
+            "description": "Innovation and cutting-edge technology for data network certification.",
+            "content": "BRQueiroz initiates the Trade-In process to acquire the LanTEK IV-S from TREND Networks, the most advanced equipment for copper and fiber optic data network certification, maintaining its commitment to high-quality data transmission.",
+            "alt": "Image of LanTEK IV-S"
+        },
+        "3": {
+            "title": "BRQueiroz: Technology for Sugar and Alcohol Plants",
+            "description": "Technological solutions to increase productivity and operational safety in plants.",
+            "content": "BRQueiroz provides technological solutions for sugar and alcohol plants, featuring cutting-edge infrastructure, 24/7 monitoring, robust digital security, and specialized support. We ensure efficiency, productivity, and safety for your operation.",
+            "alt": "Image representing sugar and alcohol plants"
+        }
+    }
+}

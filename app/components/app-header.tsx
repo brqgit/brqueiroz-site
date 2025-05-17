@@ -3,10 +3,12 @@ import { useEffect, useState } from "react";
 import Card from "./card";
 import { motion } from "framer-motion";
 import { getAllArticles } from "~/lib/articles";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function AppHeader() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
+    const { t } = useTranslation();
     const slides = getAllArticles()
 
     useEffect(() => {
@@ -56,19 +58,24 @@ export default function AppHeader() {
                                 className="text-center md:text-right font-sans text-[15px] md:text-[18px]"
                                 style={{ fontFamily: "'Eurostile Black', sans-serif" }}
                             >
-                                A TECNOLOGIA QUE SUA EMPRESA PRECISA PARA
+                                {t("header.h2")}
                             </h2>
                             <h1
                                 className="text-center md:text-right font-bold text-[22px] md:text-[40px]"
                                 style={{ fontFamily: "'Eurostile Black', sans-serif" }}
                             >
-                                ATINGIR O <span className="text-blue-500">PRÓXIMO NÍVEL</span>
+                                <Trans
+                                    i18nKey="header.h1"
+                                    components={[
+                                        <span className="text-blue-500" />
+                                    ]}
+                                />
                             </h1>
                             <h4
                                 className="text-center md:text-right italic text-[15px]"
                                 style={{ fontFamily: "'Eurostile Black', sans-serif" }}
                             >
-                                Para uma empresa crescer sólida e com força, invista no que há de melhor
+                                {t("header.h4")}
                             </h4>
 
                             <hr className="border-t border-white my-6 w-25 m-auto md:ml-auto" />
@@ -110,14 +117,13 @@ export default function AppHeader() {
                         >
                             <div className="w-full overflow-hidden relative flex flex-col items-center justify-center">
                                 <Card
-                                    // imageSrc="/placeholder.svg"
                                     imageSrc={slides[currentSlide].image}
                                     imageAlt="Product image"
-                                    title={slides[currentSlide].title}
-                                    description={slides[currentSlide].description}
-                                    content={slides[currentSlide].content}
+                                    title={t(slides[currentSlide].title)}
+                                    description={t(slides[currentSlide].description)}
+                                    content={t(slides[currentSlide].content)}
                                     link={slides[currentSlide].link}
-                                    buttonText="Leia mais"
+                                    buttonText={t("learn-more")}
                                     onButtonClick={() => alert("Button clicked!")}
                                     className="mb-4"
                                 />
@@ -133,7 +139,6 @@ export default function AppHeader() {
                                 </div>
                             </div>
                         </motion.div>
-
                     </div>
                 </div>
             </motion.div>

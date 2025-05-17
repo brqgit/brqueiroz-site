@@ -1,0 +1,75 @@
+{
+    "navbar": {
+        "about-us": "SOBRE NÓS",
+        "services": "SERVIÇOS",
+        "cases": "CASES",
+        "contact": "CONTATO"
+    },
+    "header": {
+        "h2": "A TECNOLOGIA QUE SUA EMPRESA PRECISA PARA",
+        "h1": "ATINGIR O <0>PRÓXIMO NÍVEL</0>",
+        "h4": "Para uma empresa crescer sólida e com força, invista no que há de melhor"
+    },
+    "home": {
+        "about": {
+            "p1": "A BRQueiroz foi idealizada com base no crescimento constante que o mundo digital tem tido, que gera a necessidade de soluções objetivas e confiáveis na estruturação e crescimento de uma empresa.",
+            "p2": "Agora com mais de 20 anos no mercado, a BRQueiroz se mostra como uma empresa sólida e confiável, trazendo soluções de qualidade para seus clientes. Nossa equipe é formada por profissionais altamente qualificados e certificados nas principais tecnologias do mercado.",
+            "p3": "Nosso compromisso é oferecer soluções personalizadas que atendam às necessidades específicas de cada cliente, garantindo a máxima eficiência e segurança em todos os projetos. Trabalhamos com as melhores práticas do mercado e estamos sempre atualizados com as últimas tendências tecnológicas.",
+            "p4": "Atendemos empresas de todos os portes e segmentos, desde pequenas empresas até grandes corporações, sempre com o mesmo nível de excelência e dedicação. Nossa missão é ser um parceiro estratégico para nossos clientes, ajudando-os a alcançar seus objetivos de negócio através da tecnologia."
+        }
+    },
+    "about-us": "<0>SOBRE</0> <1>NÓS</1>",
+    "about": {
+        "h1": "<0>SOBRE</0> <1>NÓS</1>",
+        "p1": " A BRQueiroz foi idealizada com base no crescimento constante que o mundo digital tem tido, que gera a necessidade de soluções objetivas e confiáveis na estruturação e crescimento de uma empresa.",
+        "p2": " Agora com mais de 20 anos no mercado, a BRQueiroz se mostra como referência em soluções de tecnologia da informação, trazendo o que há de melhor em soluções de T.I. para Ribeirão Preto e região.",
+        "values": [
+            {
+                "name": "Confiabilidade",
+                "desc": "Compromisso com soluções confiáveis"
+            },
+            {
+                "name": "Experiência",
+                "desc": "Mais de 20 anos no mercado de TI"
+            },
+            {
+                "name": "Engajamento",
+                "desc": "Comprometimento com cada projeto"
+            },
+            {
+                "name": "Segurança",
+                "desc": "Proteção de dados e infraestrutura"
+            }
+        ],
+        "h2": "<0>VALORES QUE</0><1></1><2>NOS GUIAM</2>",
+        "p3": " Na BRQueiroz, nossos valores são os pilares que sustentam todas as nossas operações e relacionamentos. Eles refletem quem somos e como trabalhamos para oferecer as melhores soluções em tecnologia da informação.",
+        "h2-partners": "<0>NOSSOS</0> <1>PARCEIROS</1>",
+        "p4": " Trabalhamos com as melhores empresas de tecnologia do mundo para oferecer soluções de alta qualidade para nossos clientes.",
+        "ready-elevate-technologies": "Pronto para elevar sua tecnologia?",
+        "p5": "Entre em contato conosco e descubra como podemos ajudar sua empresa a atingir o próximo nível com nossas soluções de tecnologia."
+    },
+    "talk-to-us": "Fale conosco",
+    "contact-us": "Entre em contato",
+    "years-of-experience": "Anos de experiência",
+    "learn-more": "Saiba mais",
+    "articles": {
+        "1": {
+            "title": "O invisível que sustenta a tecnologia da sua empresa",
+            "description": "A integridade da infraestrutura de TI e automação é essencial para a estabilidade das operações.",
+            "content": "A BRQueiroz oferece inspeção óptica de alta precisão para garantir a integridade da infraestrutura de TI e automação industrial, prevenindo falhas invisíveis e aumentando a confiabilidade dos processos.",
+            "alt": "Imagem representando tecnologia invisível"
+        },
+        "2": {
+            "title": "BRQueiroz Inicia Uma Nova Era com o LanTEK IV-S",
+            "description": "Inovação e tecnologia de ponta para certificação de redes de dados.",
+            "content": "BRQueiroz inicia o processo de Trade In para adquirir o LanTEK IV-S da TREND Networks, o mais moderno equipamento para certificação de redes de dados em cobre e fibra óptica, mantendo o compromisso de alta qualidade na transmissão de dados.",
+            "alt": "Imagem do LanTEK IV-S"
+        },
+        "3": {
+            "title": "BRQueiroz: Tecnologia para Usinas de Açúcar e Álcool",
+            "description": "Soluções tecnológicas para aumentar a produtividade e segurança operacional das usinas.",
+            "content": "A BRQueiroz oferece soluções tecnológicas para usinas de açúcar e álcool, com infraestrutura de ponta, monitoramento 24/7, segurança digital robusta e suporte especializado. Garantimos eficiência, produtividade e segurança para sua operação.",
+            "alt": "Imagem representando usinas de açúcar e álcool"
+        }
+    }
+}

@@ -65,7 +65,6 @@ export default function ServicePage() {
                             </div>
                         </div>
                         <div className="flex justify-center">
-                            {/* <div className="bg-white/10 p-8 rounded-full">{service.icon}</div> */}
                             <img
                                 src={service.image}
                                 alt={service.title}
@@ -97,9 +96,17 @@ export default function ServicePage() {
                                     <span className="text-gray-700">+55 (16) 99199-1078</span>
                                 </div>
                             </div>
-                            <button className="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+
+                            <a
+                                href="mailto:contato@brqueiroz.com.br"
+                                className="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-center block"
+                            >
                                 Solicitar Contato
-                            </button>
+                            </a>
+
+                            {/* <button className="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+                                Solicitar Contato
+                            </button> */}
                         </div>
                     </div>
 

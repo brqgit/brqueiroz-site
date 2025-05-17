@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const AppNavbar: React.FC = () => {
+  const { t } = useTranslation();
+
   const [navbarBg, setNavbarBg] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,9 +33,13 @@ const AppNavbar: React.FC = () => {
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-10 w-full py-2 transition-colors duration-300 ${navbarBg ? "bg-[#0a1525]" : "bg-transparent pt-5"
-        }`}
+    <motion.nav
+      className={`fixed top-0 left-0 right-0 z-10 w-full transition-colors duration-1000 ${navbarBg ? "bg-[#0a1525]" : "bg-transparent pt-5"}`}
+      style={{
+        paddingTop: navbarBg ? 0 : 8,
+        paddingBottom: navbarBg ? 0 : 8,
+        transition: "padding 0.5s"
+      }}
     >
       <div className="w-full max-w-7xl mx-auto px-5 flex justify-between items-center">
         <div className="text-2xl font-bold">
@@ -58,7 +65,7 @@ const AppNavbar: React.FC = () => {
         </button>
 
         <ul className="hidden lg:flex list-none items-center gap-8">
-          {["SOBRE NÓS", "SERVIÇOS", "PARCEIROS", "CASES", "CONTATO"].map((item) => (
+          {["about-us", "services", "cases", "contact"].map((item) => (
             <li key={item}>
               <a
                 href={`#${item.toLowerCase().replace(/\s/g, "-")}`}
@@ -68,7 +75,7 @@ const AppNavbar: React.FC = () => {
                 }}
                 className="text-white text-lg font-medium hover:text-blue-400 transition-colors"
               >
-                {item}
+                {t(`navbar.${item}`)}
               </a>
             </li>
           ))}
@@ -87,7 +94,7 @@ const AppNavbar: React.FC = () => {
             ✕
           </button>
           <ul className="list-none flex flex-col items-center gap-4 mt-10">
-            {["SOBRE NÓS", "SERVIÇOS", "PARCEIROS", "CASES", "CONTATO"].map((item) => (
+            {["about-us", "services", "cases", "contact"].map((item) => (
               <li key={item}>
                 <a
                   href={`#${item.toLowerCase().replace(/\s/g, "-")}`}
@@ -97,14 +104,14 @@ const AppNavbar: React.FC = () => {
                   }}
                   className="text-white text-lg font-medium hover:text-blue-400 transition-colors"
                 >
-                  {item}
+                  {t(`navbar.${item}`)}
                 </a>
               </li>
             ))}
           </ul>
         </motion.div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 

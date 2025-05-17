@@ -179,7 +179,6 @@ function LogoItem({
 }) {
   return (
     <div
-      // className="flex-shrink-0 w-32 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center"
       className="flex-shrink-0 w-50 h-25 bg-white rounded-lg shadow-sm flex items-center justify-center"
 
       style={{ marginRight: `${logoSpacing}px` }}
@@ -189,7 +188,6 @@ function LogoItem({
       <img
         src={logo.src || "/placeholder.svg"}
         alt={logo.alt}
-        // className="w-full h-full object-contain grayscale hover:grayscale-0 transition-all duration-200 p-2"
         className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-200 p-4"
         draggable="false"
       />
