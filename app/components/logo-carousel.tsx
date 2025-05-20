@@ -1,6 +1,6 @@
 import type React from "react"
-
 import { useRef, useState, useEffect } from "react"
+
 import { getPartnersLogos } from "~/lib/partners-logos";
 
 export default function LogoCarousel() {

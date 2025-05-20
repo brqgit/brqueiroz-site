@@ -1,6 +1,7 @@
-import { Check, ChevronRight } from "lucide-react"
-import { getPartnersLogos } from "~/lib/partners-logos";
 import { Trans, useTranslation } from "react-i18next";
+import { Check, ChevronRight } from "lucide-react"
+
+import { getPartnersLogos } from "~/lib/partners-logos";
 
 export default function AboutUs() {
   const { t } = useTranslation();

@@ -1,32 +1,29 @@
+import { Trans, useTranslation } from "react-i18next";
+import { useState } from "react";
+import { Award, CheckCircle, Clock, Users, X } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+
+import AboutUs from "~/about-us/about-us";
+
 import LogoCarousel from "~/components/logo-carousel";
 import ServiceCard from "~/components/service-card";
 import StatCard from "~/components/star-card";
 import TestimonialCard from "~/components/testimonial-card";
-import { getAllServices } from "~/lib/services";
 import { Carousel } from "~/components/carousel";
 
-import {
-    Award,
-    CheckCircle,
-    Clock,
-    Users,
-    X,
-} from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
-import AboutUs from "~/about-us/about-us";
-import { useState } from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { getAllServices } from "~/lib/services";
+import { getAllTestimonials } from "~/lib/testimonials";
 
 export default function HomePage() {
     const { t } = useTranslation();
-
-    const services = getAllServices();
+    const services = getAllServices(t);
+    const testimonials = getAllTestimonials(t);
     const [showAbout, setShowAbout] = useState(false);
 
     return (
         <>
             <LogoCarousel />
-            <section id="aboutus" className="py-16 px-4 md:px-8 lg:px-16 bg-white overflow-hidden">
+            <section id="about-us" className="py-16 px-4 md:px-8 lg:px-16 bg-white overflow-hidden">
                 <motion.div
                     className="max-w-7xl mx-auto"
                     initial={{ opacity: 0, y: 50 }}
@@ -47,7 +44,7 @@ export default function HomePage() {
                                 <Trans
                                     i18nKey="about-us"
                                     components={[
-                                        <span />, 
+                                        <span />,
                                         <span className="text-blue-600" />
                                     ]}
                                 />
@@ -190,10 +187,10 @@ export default function HomePage() {
                 >
                     <div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                            <StatCard number="20+" text="Anos de Experiência" icon={<Clock className="h-8 w-8 text-white" />} />
-                            <StatCard number="5000+" text="Clientes Atendidos" icon={<Users className="h-8 w-8 text-white" />} />
-                            <StatCard number="10000+" text="Projetos Realizados" icon={<CheckCircle className="h-8 w-8 text-white" />} />
-                            <StatCard number="99.9%" text="Satisfação Garantida" icon={<Award className="h-8 w-8 text-white" />} />
+                            <StatCard number="20+" text={t("years-of-experience")} icon={<Clock className="h-8 w-8 text-white" />} />
+                            <StatCard number="5000+" text={t("clients-served")} icon={<Users className="h-8 w-8 text-white" />} />
+                            <StatCard number="10000+" text={t("projects-completed")} icon={<CheckCircle className="h-8 w-8 text-white" />} />
+                            <StatCard number="99.9%" text={t("satisfaction-guaranteed")} icon={<Award className="h-8 w-8 text-white" />} />
                         </div>
                     </div>
                 </motion.div>
@@ -208,11 +205,17 @@ export default function HomePage() {
                 >
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold">
-                            NOSSOS <span className="text-blue-600">SERVIÇOS</span>
+                            {/* NOSSOS <span className="text-blue-600">SERVIÇOS</span> */}
+                            <Trans
+                                i18nKey="our-services"
+                                components={[
+                                    <span />,
+                                    <span className="text-blue-600" />
+                                ]}
+                            />
                         </h2>
                         <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-                            Oferecemos uma ampla gama de serviços de tecnologia da informação para atender às necessidades específicas
-                            da sua empresa. Conheça nossas soluções:
+                            {t("our-services-description")}
                         </p>
                     </div>
                     <div>
@@ -242,32 +245,30 @@ export default function HomePage() {
                 >
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold">
-                            CASOS DE <span className="text-blue-600">SUCESSO</span>
+                            {/* CASOS DE <span className="text-blue-600">SUCESSO</span> */}
+                            <Trans
+                                i18nKey="cases-success"
+                                components={[
+                                    <span />,
+                                    <span className="text-blue-600" />
+                                ]}
+                            />
                         </h2>
                         <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-                            Conheça alguns dos nossos casos de sucesso e veja o que nossos clientes têm a dizer sobre nossos serviços.
+                            {t("cases-success-description")}
                         </p>
                     </div>
 
                     <Carousel itemsPerPage={3} showArrows={false} preserveGrid={true} gridClassName="grid md:grid-cols-3 gap-8">
-                        <TestimonialCard
-                            name="Atualização de infraestrutura tecnológica"
-                            position="Instituição educacional"
-                            testimonial="Focada em avanços com tecnologias Microsoft. Inclui otimização de virtualização, gestão via System Center, suporte ao Active Directory, Remote Desktop Services e SQL Server 2012."
-                            image="/placeholder.svg"
-                        />
-                        <TestimonialCard
-                            name="Reformulação da estrutura de emails e comunicação"
-                            position="Empresa do segmento aéreo"
-                            testimonial="Implantação do Office365 em diferentes Tenants, Sharepoint para compartilhamento de arquivos, e Skype for Business para reuniões com áudio, videoconferência e compartilhamento de documentos, visando otimização e redução de custos."
-                            image="/placeholder.svg"
-                        />
-                        {/* <TestimonialCard
-                            name="Migração de Infraestrutura de TI"
-                            position="Eventos e Turismo"
-                            testimonial="A BRQueiroz migrou 700 caixas de e-mail para o Exchange Online e transferiu 14TB de dados para o SharePoint Online, modernizando a infraestrutura de TI da empresa de eventos e turismo, incluindo novos recursos como Microsoft Teams."
-                            image="/placeholder.svg"
-                        /> */}
+                        {testimonials.map((testimonial, idx) => (
+                            <TestimonialCard
+                                key={idx}
+                                name={testimonial.title}
+                                position={testimonial.position}
+                                testimonial={testimonial.testimonial}
+                                image={testimonial.image}
+                            />
+                        ))}
                     </Carousel>
 
                     {/* <div className="mt-12 text-center">

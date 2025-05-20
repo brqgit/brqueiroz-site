@@ -10,6 +10,13 @@
         "h1": "REACH THE <0>NEXT LEVEL</0>",
         "h4": "For a company to grow strong and solid, invest in the best available"
     },
+    "footer": {
+        "description": "Information technology solutions for over 20 years, bringing the best to Ribeirão Preto and the surrounding region",
+        "services": "Services",
+        "quick-links": "Quick Links",
+        "contact": "Contact",
+        "copyright": "BRQueiroz. All rights reserved."
+    },
     "home": {
         "about": {
             "p1": "BRQueiroz was conceived based on the constant growth that the digital world has had, which generates the need for objective and reliable solutions in the structuring and growth of a company.",
@@ -48,9 +55,16 @@
         "ready-elevate-technologies": "Ready to elevate your technology?",
         "p5": "Contact us and find out how we can help your company reach the next level with our technology solutions."
     },
+    "our-services": "<0>OUR</0> <1>SERVICES</1>",
+    "our-services-description": "We offer a wide range of information technology services to meet the specific needs of your company. Discover our solutions:",
+    "cases-success": "<0>SUCCESS</0> <1>STORIES</1>",
+    "cases-success-description": "Discover some of our success stories and see what our clients have to say about our services.",
     "talk-to-us": "Talk to us",
     "contact-us": "Contact us",
-    "years-of-experience": "Years of experience",
+    "years-of-experience": "Years of Experience",
+    "clients-served": "Clients Served",
+    "projects-completed": "Projects Completed",
+    "satisfaction-guaranteed": "Satisfaction Guaranteed",
     "learn-more": "Learn more",
     "articles": {
         "1": {
@@ -71,5 +85,147 @@
             "content": "BRQueiroz provides technological solutions for sugar and alcohol plants, featuring cutting-edge infrastructure, 24/7 monitoring, robust digital security, and specialized support. We ensure efficiency, productivity, and safety for your operation.",
             "alt": "Image representing sugar and alcohol plants"
         }
+    },
+    "services": {
+        "microsoft-365": {
+            "title": "Microsoft 365",
+            "description": "Transform your company with our Microsoft 365 consulting. We analyze your infrastructure, implement customized solutions, and optimize processes, collaborating to increase productivity and efficiency.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Microsoft 365 consulting provides a comprehensive and strategic analysis of your company's technological infrastructure, highlighting areas for improvement, cost reduction, and increased productivity.",
+                "With a team of highly qualified specialists, we carry out a detailed diagnosis of your current IT structure, including hardware, software, networks, security, processes, and people.",
+                "Based on this diagnosis, we develop a personalized strategic plan aligned with your company's business objectives, with clear and prioritized recommendations for implementation.",
+                "We implement Microsoft 365 solutions that may include configuration and integration of applications such as Microsoft Teams, SharePoint, Exchange Online, and other essential collaborative tools.",
+                "Our ongoing support ensures that the implemented solutions are optimized and aligned with best practices in security and operational efficiency.",
+                "In addition to improving internal collaboration and communication, our approach aims to empower your team with training and technical support to maximize the return on your technology investment.",
+                "We are committed to delivering tangible results, measuring the impact of implemented changes, and adjusting strategies as needed to meet your business's dynamic needs."
+            ]
+        },
+        "consulting": {
+            "title": "Consulting",
+            "description": "Plan the best route for quality solutions. Our team of specialists analyzes your current infrastructure and proposes strategic improvements to optimize your technological resources.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our IT consulting offers a complete and strategic analysis of your company's technological infrastructure, identifying opportunities for improvement, cost reduction, and increased productivity.",
+                "With a team of highly qualified and experienced specialists, we carry out a detailed diagnosis of your current IT structure, evaluating hardware, software, networks, security, processes, and people.",
+                "Based on this diagnosis, we develop a personalized strategic plan aligned with your company's business objectives, with clear and prioritized recommendations for implementation.",
+                "We implement solutions that may include everything from cloud migration to the integration of collaborative tools, always aligned with market best practices.",
+                "Our commitment is to ensure that your company makes the most of its technology investments, improving operational efficiency and driving sustainable growth.",
+                "In addition to short-term strategies, we focus on establishing a solid foundation for the future, empowering your team and ensuring that your technological solutions are always aligned with market demands."
+            ]
+        },
+        "infrastructure": {
+            "title": "Infrastructure",
+            "description": "Essential structure for solid growth. We implement and manage your company's entire IT infrastructure, ensuring stability, security, and high performance.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our IT infrastructure solution offers a solid and reliable foundation for all your company's technological operations, ensuring stability, security, and high performance.",
+                "We design, implement, and manage the entire IT infrastructure, including servers, storage, backup, networks, operating systems, and virtualization, tailored to your business's specific needs.",
+                "We use market best practices and cutting-edge technologies to create a robust, scalable infrastructure prepared for your company's future growth.",
+                "Our team of certified specialists ensures the correct implementation and continuous operation of all components, minimizing risks and maximizing the return on your technology investment.",
+                "In addition to implementing the infrastructure, we offer proactive support and continuous management, ensuring that your IT infrastructure operates at maximum efficiency and is always aligned with your company's strategic objectives."
+            ]
+        },
+        "security": {
+            "title": "Information Security",
+            "description": "Protect your data and systems against digital threats. We offer complete security solutions, including firewall, antivirus, backup, encryption, and user training.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Information Security solution offers comprehensive protection for your company's data and systems, defending them against the most diverse digital threats in today's landscape.",
+                "We implement multiple layers of security, including firewall, antivirus, anti-malware, intrusion detection, data loss prevention, and more, creating a robust defense against cyberattacks.",
+                "In addition to technological solutions, we offer security policies, user training, and periodic audits to ensure that all aspects of information security are covered.",
+                "Our approach is proactive, identifying and mitigating vulnerabilities before they can be exploited, and keeping all security systems updated against the latest threats.",
+                "Focusing on compliance with security standards and regulations, our team ensures that your company is always protected and compliant with market and legal requirements."
+            ]
+        },
+        "cloud": {
+            "title": "Cloud Computing",
+            "description": "Migrate your systems to the cloud and gain flexibility, scalability, and cost reduction. We are specialists in Microsoft Azure solutions.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Cloud Computing solution offers migration and management of your systems and data to the cloud, providing greater flexibility, scalability, and reduction of operational costs.",
+                "We work with the main cloud providers in the market, such as Microsoft Azure, AWS, and Google Cloud, to offer the best solution according to your company's specific needs.",
+                "We develop a personalized migration strategy, minimizing risks and interruptions, and ensuring that your systems work perfectly in the cloud environment.",
+                "After migration, we offer continuous management services, cost optimization, performance monitoring, and security to ensure you get the most value from your cloud investment.",
+                "With our expertise in Microsoft Azure, we offer advanced integrations, implementation of managed services, and specialized support so your company can make the most of the platform's resources."
+            ]
+        },
+        "networking": {
+            "title": "Networking and Connectivity",
+            "description": "Design and implementation of structured networks, wireless, VPN, SD-WAN, and connectivity solutions to ensure efficient communication between your systems and employees.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Networking and Connectivity solution offers the design, implementation, and management of your company's entire communication infrastructure, ensuring fast, stable, and secure connections.",
+                "We develop projects for structured networks, wireless, VPN, SD-WAN, and other connectivity solutions tailored to the specific needs of your business and physical environment.",
+                "We use high-quality equipment and follow market best practices to create a robust, scalable network infrastructure prepared for current and future demands.",
+                "In addition to implementation, we offer monitoring, maintenance, and continuous optimization services to ensure maximum performance and availability of your network.",
+                "Our approach includes proactive performance analysis, identification, and resolution of problems before they impact your services, ensuring operational continuity and user satisfaction."
+            ]
+        },
+        "support": {
+            "title": "Technical Support",
+            "description": "Specialized and proactive technical support, with remote and on-site service, to quickly solve problems and minimize the impact on your operations.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Technical Support solution offers specialized and proactive service to quickly solve problems, ensuring your company's operational continuity.",
+                "With remote and on-site support services, our team is available to efficiently resolve incidents, minimizing the impact on your daily operations.",
+                "In addition to reactive support, we also offer proactive monitoring and preventive maintenance to identify and resolve problems before they affect your technological environment.",
+                "Our approach aims not only to solve problems but also to optimize the performance of your systems and ensure the continuous satisfaction of end users."
+            ]
+        },
+        "virtualization": {
+            "title": "Virtualization",
+            "description": "Optimize your hardware resources with server, desktop, and application virtualization solutions, increasing efficiency and reducing operational costs.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Virtualization solution offers hardware resource optimization through server, desktop, and application virtualization, providing greater operational efficiency and cost reduction.",
+                "We develop personalized virtualization projects, tailored to your business's specific needs, to maximize the use of existing resources and simplify the management of complex environments.",
+                "We use leading market technologies and best practices to implement virtualization solutions that ensure scalability, security, and high availability for your operations.",
+                "In addition to the initial implementation, we offer continuous monitoring, maintenance, and optimization services to ensure that your virtualized environments are always operating at maximum performance."
+            ]
+        },
+        "structured-cabling": {
+            "title": "Structured Cabling",
+            "description": "Design and execution of structured cabling for corporate environments and data centers, ensuring performance, organization, and scalability.",
+            "shortDescription": "Cabling infrastructure for data centers, certification, and performance guarantee.",
+            "fullDescription": [
+                "We offer complete structured cabling solutions for corporate environments and data centers, from design to execution, following market best practices and international standards.",
+                "Our service ensures organization, ease of maintenance, scalability, and high performance for your IT infrastructure.",
+                "We use high-quality materials and specialized labor to ensure the durability and efficiency of the cabling system.",
+                "We certify all network points using the LanTEK-IV equipment, ensuring that the cabling meets the required standards for high-speed data transmission and maximum reliability.",
+                "Certification with LanTEK-IV ensures that your network is ready to support critical applications and future expansions, providing peace of mind and security for your business."
+            ]
+        }
+    },
+    "testimonials": {
+        "1": {
+            "title": "Technological Infrastructure Upgrade",
+            "position": "Educational Institution",
+            "testimonial": "Focused on advancements with Microsoft technologies. Includes virtualization optimization, management via System Center, support for Active Directory, Remote Desktop Services, and SQL Server 2012."
+        },
+        "2": {
+            "title": "Email and Communication Structure Overhaul",
+            "position": "Aviation Sector Company",
+            "testimonial": "Implementation of Office365 in different tenants, SharePoint for file sharing, and Skype for Business for meetings with audio, videoconferencing, and document sharing, aiming for optimization and cost reduction."
+        },
+        "3": {
+            "title": "Certification, Connectorization, and WiFi Coverage",
+            "position": "Orofacial Education Institutes",
+            "testimonial": "We implemented wired and UniFI U6 WiFi networks in branches across Brazil, ensuring high performance, low latency, and efficient coverage. Certification, connectorization, technical compliance, and stable operation."
+        }
+    },
+    "pageServices": {
+        "home": "Home",
+        "services": "Services",
+        "service-not-found": "Service not found",
+        "back-to-services": "Back to Services",
+        "back-to-home": "Back to Home",
+        "request-quote": "Request a Quote",
+        "talk-to-specialist": "Talk to a Specialist",
+        "our-services": "Our Services",
+        "need-help": "Need help?",
+        "contact-us": "Contact our team to ask questions or request a personalized quote.",
+        "request-contact": "Request Contact",
+        "overview": "Overview"
     }
 }

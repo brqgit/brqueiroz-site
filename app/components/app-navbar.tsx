@@ -1,8 +1,8 @@
+import { useTranslation } from "react-i18next";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 
-const AppNavbar: React.FC = () => {
+export default function AppNavbar() {
   const { t } = useTranslation();
 
   const [navbarBg, setNavbarBg] = useState(false);
@@ -114,5 +114,3 @@ const AppNavbar: React.FC = () => {
     </motion.nav>
   );
 };
-
-export default AppNavbar;

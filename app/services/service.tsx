@@ -1,24 +1,29 @@
-import { ChevronLeft } from "lucide-react";
-import { getServiceBySlug, getAllServices } from "~/lib/services";
-import ServiceNav from "~/components/service-nav";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router";
+import { ChevronLeft } from "lucide-react";
+
+import ServiceNav from "~/components/service-nav";
+
+import { getServiceBySlug, getAllServices } from "~/lib/services";
 
 export default function ServicePage() {
+    const { t } = useTranslation();
     const location = useLocation();
-    const allServices = getAllServices();
+
+    const allServices = getAllServices(t);
 
     const searchParams = new URLSearchParams(location.search);
     const slug = searchParams.get("service") || allServices[0]?.slug;
 
-    const service = slug ? getServiceBySlug(slug) : undefined;
+    const service = slug ? getServiceBySlug(slug, t) : undefined;
 
     if (!service) {
         return (
             <div className="min-h-screen flex items-center justify-center">
                 <div className="text-center">
-                    <h1 className="text-2xl font-bold mb-4">Serviço não encontrado</h1>
+                    <h1 className="text-2xl font-bold mb-4">{t("pageServices.service-not-found")}</h1>
                     <a href="/services" className="inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
-                        Voltar para Serviços
+                        {t("pageServices.back-to-services")}
                     </a>
                 </div>
             </div>
@@ -30,11 +35,11 @@ export default function ServicePage() {
             <div className="bg-gray-100 py-3 px-4 md:px-8 lg:px-16">
                 <div className="max-w-7xl mx-auto flex items-center gap-2 text-sm">
                     <a href="/home" className="text-gray-600 hover:text-blue-600">
-                        Home
+                        {t("pageServices.home")}
                     </a>
                     <span className="text-gray-400">/</span>
                     <a href="/services" className="text-gray-600 hover:text-blue-600">
-                        Serviços
+                        {t("pageServices.services")}
                     </a>
                     <span className="text-gray-400">/</span>
                     <span className="text-blue-600">{service.title}</span>
@@ -45,7 +50,7 @@ export default function ServicePage() {
                 <div className="max-w-7xl mx-auto">
                     <a href="/home" className="inline-flex items-center text-blue-400 hover:text-blue-300 mb-6">
                         <ChevronLeft className="h-4 w-4 mr-1" />
-                        Voltar para Home
+                        {t("pageServices.back-to-home")}
                     </a>
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="space-y-6">
@@ -55,12 +60,12 @@ export default function ServicePage() {
                                 <a
                                     href={`mailto:corp@brqueiroz.com.br?subject=Solicitar%20Orçamento%20-%20${encodeURIComponent(service.title)}`}
                                     className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
-                                    Solicitar Orçamento
+                                    {t("pageServices.request-quote")}
                                 </a>
                                 <a
                                     href={`mailto:suportecst@brqueiroz.com.br?subject=Falar%20com%20Especialista%20-%20${encodeURIComponent(service.title)}`}
                                     className="px-4 py-2 border border-white text-white rounded-md hover:bg-white/10">
-                                    Falar com um Especialista
+                                    {t("pageServices.talk-to-specialist")}
                                 </a>
                             </div>
                         </div>
@@ -79,14 +84,14 @@ export default function ServicePage() {
                 <div className="max-w-7xl mx-auto grid md:grid-cols-[300px_1fr] gap-12">
                     <div className="space-y-8">
                         <div>
-                            <h3 className="text-xl font-bold mb-4">Nossos Serviços</h3>
+                            <h3 className="text-xl font-bold mb-4">{t("pageServices.our-services")}</h3>
                             <ServiceNav services={allServices} currentSlug={slug} />
                         </div>
 
                         <div className="bg-blue-50 p-6 rounded-lg">
-                            <h3 className="text-xl font-bold mb-4">Precisa de ajuda?</h3>
+                            <h3 className="text-xl font-bold mb-4">{t("pageServices.need-help")}</h3>
                             <p className="text-gray-700 mb-4">
-                                Entre em contato com nossa equipe para tirar dúvidas ou solicitar um orçamento personalizado.
+                                {t("pageServices.contact-us")}
                             </p>
                             <div className="space-y-3">
                                 <div className="flex items-center gap-2">
@@ -101,7 +106,7 @@ export default function ServicePage() {
                                 href="mailto:contato@brqueiroz.com.br"
                                 className="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-center block"
                             >
-                                Solicitar Contato
+                                {t("pageServices.request-contact")}
                             </a>
 
                             {/* <button className="w-full mt-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
@@ -112,13 +117,17 @@ export default function ServicePage() {
 
                     <div className="space-y-12">
                         <div>
-                            <h2 className="text-3xl font-bold mb-6">Visão Geral</h2>
+                            <h2 className="text-3xl font-bold mb-6">{t("pageServices.overview")}</h2>
                             <div className="prose max-w-none text-gray-700">
-                                {service.fullDescription.map((paragraph, index) => (
-                                    <p key={index} className="mb-4">
-                                        {paragraph}
-                                    </p>
-                                ))}
+                                {Array.isArray(service.fullDescription) ? (
+                                    service.fullDescription.map((paragraph, index) => (
+                                        <p key={index} className="mb-4">
+                                            {paragraph}
+                                        </p>
+                                    ))
+                                ) : (
+                                    <p className="mb-4">{service.fullDescription}</p>
+                                )}
                             </div>
                         </div>
                     </div>

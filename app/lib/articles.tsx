@@ -20,7 +20,7 @@ const articles: Article[] = [
         title: "articles.2.title",
         description: "articles.2.description",
         content: "articles.2.content",
-        image: "/articles/artigo 2.jpeg",
+        image: "/articles/artigo 2.jpg",
         alt: "articles.2.alt",
         link: "https://www.linkedin.com/feed/update/urn:li:activity:7280970877309980672",
     },

@@ -1,14 +1,15 @@
-import { useEffect, useState } from "react";
-
-import Card from "./card";
-import { motion } from "framer-motion";
-import { getAllArticles } from "~/lib/articles";
 import { Trans, useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+
+import { getAllArticles } from "~/lib/articles";
+import Card from "./card";
 
 export default function AppHeader() {
+    const { t } = useTranslation();
+
     const [currentSlide, setCurrentSlide] = useState(0);
 
-    const { t } = useTranslation();
     const slides = getAllArticles()
 
     useEffect(() => {
@@ -20,7 +21,9 @@ export default function AppHeader() {
 
 
     return (
-        <header id="header" className="relative h-full md:h-[89vh] overflow-hidden pt-[60px] bg-gray-950 text-white">
+        // <header id="header" className="relative h-full md:h-[89vh] overflow-hidden pt-[60px] bg-gray-950 text-white">
+        <header id="header" className="relative h-full md:h-[840px] overflow-hidden pt-[60px] bg-gray-950 text-white">
+
             <video
                 className="absolute top-0 left-0 w-full h-[100%] object-cover"
                 autoPlay
@@ -85,25 +88,25 @@ export default function AppHeader() {
                                     href="/services?service=consultoria"
                                     className="border border-white text-white text-xs px-4 py-2 rounded-sm transform transition-transform hover:scale-105 hover:bg-white hover:text-gray-900"
                                 >
-                                    Consultoria
+                                    {t("services.consulting.title")}
                                 </a>
                                 <a
                                     href="/services?service=infraestrutura"
                                     className="border border-white text-white text-xs px-4 py-2 rounded-sm transform transition-transform hover:scale-105 hover:bg-white hover:text-gray-900"
                                 >
-                                    Infraestrutura
+                                    {t("services.infrastructure.title")}
                                 </a>
                                 <a
                                     href="/services?service=seguranca"
                                     className="border border-white text-white text-xs px-4 py-2 rounded-sm transform transition-transform hover:scale-105 hover:bg-white hover:text-gray-900"
                                 >
-                                    Segurança
+                                    {t("services.security.title")}
                                 </a>
                                 <a
                                     href="/services?service=cloud"
                                     className="border border-white text-white text-xs px-4 py-2 rounded-sm transform transition-transform hover:scale-105 hover:bg-white hover:text-gray-900"
                                 >
-                                    Cloud Computing
+                                    {t("services.cloud.title")}
                                 </a>
                             </div>
                         </motion.div>
