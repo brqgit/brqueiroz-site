@@ -4,14 +4,13 @@ import { initReactI18next } from "react-i18next";
 import ptBR from "../public/locales/pt-BR/translation.json";
 import en from "../public/locales/en/translation.json";
 
-// let lng = "pt-BR";
-let lng = "en";
+let lng = "pt-BR";
 
-// if (typeof window !== "undefined") {
-//   if (window.location.hostname.endsWith(".com") || window.location.hostname.endsWith(".net")) {
-//     lng = "en";
-//   }
-// }
+if (typeof window !== "undefined") {
+  if (window.location.hostname.endsWith(".com") || window.location.hostname.endsWith(".net")) {
+    lng = "en";
+  }
+}
 
 i18n
   .use(initReactI18next)
