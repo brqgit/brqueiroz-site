@@ -1,10 +1,13 @@
+import { Trans, useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
-
-import Card from "./card";
 import { motion } from "framer-motion";
+
 import { getAllArticles } from "~/lib/articles";
+import Card from "./card";
 
 export default function AppHeader() {
+    const { t } = useTranslation();
+
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const slides = getAllArticles()
@@ -18,7 +21,9 @@ export default function AppHeader() {
 
 
     return (
-        <header id="header" className="relative h-full md:h-[89vh] overflow-hidden pt-[60px] bg-gray-950 text-white">
+        // <header id="header" className="relative h-full md:h-[89vh] overflow-hidden pt-[60px] bg-gray-950 text-white">
+        <header id="header" className="relative h-full md:h-[840px] overflow-hidden pt-[60px] bg-gray-950 text-white">
+
             <video
                 className="absolute top-0 left-0 w-full h-[100%] object-cover"
                 autoPlay
@@ -56,19 +61,24 @@ export default function AppHeader() {
                                 className="text-center md:text-right font-sans text-[15px] md:text-[18px]"
                                 style={{ fontFamily: "'Eurostile Black', sans-serif" }}
                             >
-                                A TECNOLOGIA QUE SUA EMPRESA PRECISA PARA
+                                {t("header.h2")}
                             </h2>
                             <h1
                                 className="text-center md:text-right font-bold text-[22px] md:text-[40px]"
                                 style={{ fontFamily: "'Eurostile Black', sans-serif" }}
                             >
-                                ATINGIR O <span className="text-blue-500">PRÓXIMO NÍVEL</span>
+                                <Trans
+                                    i18nKey="header.h1"
+                                    components={[
+                                        <span className="text-blue-500" />
+                                    ]}
+                                />
                             </h1>
                             <h4
                                 className="text-center md:text-right italic text-[15px]"
                                 style={{ fontFamily: "'Eurostile Black', sans-serif" }}
                             >
-                                Para uma empresa crescer sólida e com força, invista no que há de melhor
+                                {t("header.h4")}
                             </h4>
 
                             <hr className="border-t border-white my-6 w-25 m-auto md:ml-auto" />
@@ -78,25 +88,25 @@ export default function AppHeader() {
                                     href="/services?service=consultoria"
                                     className="border border-white text-white text-xs px-4 py-2 rounded-sm transform transition-transform hover:scale-105 hover:bg-white hover:text-gray-900"
                                 >
-                                    Consultoria
+                                    {t("services.consulting.title")}
                                 </a>
                                 <a
                                     href="/services?service=infraestrutura"
                                     className="border border-white text-white text-xs px-4 py-2 rounded-sm transform transition-transform hover:scale-105 hover:bg-white hover:text-gray-900"
                                 >
-                                    Infraestrutura
+                                    {t("services.infrastructure.title")}
                                 </a>
                                 <a
                                     href="/services?service=seguranca"
                                     className="border border-white text-white text-xs px-4 py-2 rounded-sm transform transition-transform hover:scale-105 hover:bg-white hover:text-gray-900"
                                 >
-                                    Segurança
+                                    {t("services.security.title")}
                                 </a>
                                 <a
                                     href="/services?service=cloud"
                                     className="border border-white text-white text-xs px-4 py-2 rounded-sm transform transition-transform hover:scale-105 hover:bg-white hover:text-gray-900"
                                 >
-                                    Cloud Computing
+                                    {t("services.cloud.title")}
                                 </a>
                             </div>
                         </motion.div>
@@ -110,14 +120,13 @@ export default function AppHeader() {
                         >
                             <div className="w-full overflow-hidden relative flex flex-col items-center justify-center">
                                 <Card
-                                    // imageSrc="/placeholder.svg"
                                     imageSrc={slides[currentSlide].image}
                                     imageAlt="Product image"
-                                    title={slides[currentSlide].title}
-                                    description={slides[currentSlide].description}
-                                    content={slides[currentSlide].content}
+                                    title={t(slides[currentSlide].title)}
+                                    description={t(slides[currentSlide].description)}
+                                    content={t(slides[currentSlide].content)}
                                     link={slides[currentSlide].link}
-                                    buttonText="Leia mais"
+                                    buttonText={t("learn-more")}
                                     onButtonClick={() => alert("Button clicked!")}
                                     className="mb-4"
                                 />
@@ -133,7 +142,6 @@ export default function AppHeader() {
                                 </div>
                             </div>
                         </motion.div>
-
                     </div>
                 </div>
             </motion.div>

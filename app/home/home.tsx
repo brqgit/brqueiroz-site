@@ -1,37 +1,29 @@
+import { Trans, useTranslation } from "react-i18next";
+import { useState } from "react";
+import { Award, CheckCircle, Clock, Users, X } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+
+import AboutUs from "~/about-us/about-us";
+
 import LogoCarousel from "~/components/logo-carousel";
 import ServiceCard from "~/components/service-card";
 import StatCard from "~/components/star-card";
 import TestimonialCard from "~/components/testimonial-card";
-import { getAllServices } from "~/lib/services";
 import { Carousel } from "~/components/carousel";
 
-import {
-    Award,
-    CheckCircle,
-    Clock,
-    Cloud,
-    Cpu,
-    Laptop,
-    LineChart,
-    Network,
-    Server,
-    Shield,
-    Users,
-    X,
-    Zap,
-} from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
-import AboutUs from "~/about-us/about-us";
-import { useState } from "react";
+import { getAllServices } from "~/lib/services";
+import { getAllTestimonials } from "~/lib/testimonials";
 
 export default function HomePage() {
-    const services = getAllServices();
+    const { t } = useTranslation();
+    const services = getAllServices(t);
+    const testimonials = getAllTestimonials(t);
     const [showAbout, setShowAbout] = useState(false);
 
     return (
         <>
             <LogoCarousel />
-            <section id="sobre-nós" className="py-16 px-4 md:px-8 lg:px-16 bg-white overflow-hidden">
+            <section id="about-us" className="py-16 px-4 md:px-8 lg:px-16 bg-white overflow-hidden">
                 <motion.div
                     className="max-w-7xl mx-auto"
                     initial={{ opacity: 0, y: 50 }}
@@ -48,7 +40,14 @@ export default function HomePage() {
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true, amount: 0.2 }}
                             >
-                                SOBRE <span className="text-blue-600">NÓS</span>
+                                {/* SOBRE <span className="text-blue-600">NÓS</span> */}
+                                <Trans
+                                    i18nKey="about-us"
+                                    components={[
+                                        <span />,
+                                        <span className="text-blue-600" />
+                                    ]}
+                                />
                             </motion.h2>
                             <div className="grid md:grid-cols-2 gap-12">
                                 <motion.div
@@ -59,23 +58,16 @@ export default function HomePage() {
                                     viewport={{ once: true, amount: 0.2 }}
                                 >
                                     <p className="text-gray-700">
-                                        A BRQueiroz foi idealizada com base no crescimento constante que o mundo digital tem tido, que gera a
-                                        necessidade de soluções objetivas e confiáveis na estruturação e crescimento de uma empresa.
+                                        {t("home.about.p1")}
                                     </p>
                                     <p className="text-gray-700">
-                                        Agora com mais de 20 anos no mercado, a BRQueiroz se mostra como uma empresa sólida e confiável, trazendo
-                                        soluções de qualidade para seus clientes. Nossa equipe é formada por profissionais altamente qualificados
-                                        e certificados nas principais tecnologias do mercado.
+                                        {t("home.about.p2")}
                                     </p>
                                     <p className="text-gray-700">
-                                        Nosso compromisso é oferecer soluções personalizadas que atendam às necessidades específicas de cada
-                                        cliente, garantindo a máxima eficiência e segurança em todos os projetos. Trabalhamos com as melhores
-                                        práticas do mercado e estamos sempre atualizados com as últimas tendências tecnológicas.
+                                        {t("home.about.p3")}
                                     </p>
                                     <p className="text-gray-700">
-                                        Atendemos empresas de todos os portes e segmentos, desde pequenas empresas até grandes corporações, sempre
-                                        com o mesmo nível de excelência e dedicação. Nossa missão é ser um parceiro estratégico para nossos
-                                        clientes, ajudando-os a alcançar seus objetivos de negócio através da tecnologia.
+                                        {t("home.about.p4")}
                                     </p>
                                 </motion.div>
                                 <motion.div
@@ -138,7 +130,7 @@ export default function HomePage() {
                                 className="inline-flex items-center justify-center px-6 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-medium text-base transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 transform hover:scale-105"
                                 onClick={() => setShowAbout(true)}
                             >
-                                Saiba mais
+                                {t("learn-more")}
                                 <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                                 </svg>
@@ -195,15 +187,15 @@ export default function HomePage() {
                 >
                     <div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                            <StatCard number="20+" text="Anos de Experiência" icon={<Clock className="h-8 w-8 text-white" />} />
-                            <StatCard number="500+" text="Clientes Atendidos" icon={<Users className="h-8 w-8 text-white" />} />
-                            <StatCard number="1000+" text="Projetos Realizados" icon={<CheckCircle className="h-8 w-8 text-white" />} />
-                            <StatCard number="99.9%" text="Satisfação Garantida" icon={<Award className="h-8 w-8 text-white" />} />
+                            <StatCard number="20+" text={t("years-of-experience")} icon={<Clock className="h-8 w-8 text-white" />} />
+                            <StatCard number="5000+" text={t("clients-served")} icon={<Users className="h-8 w-8 text-white" />} />
+                            <StatCard number="10000+" text={t("projects-completed")} icon={<CheckCircle className="h-8 w-8 text-white" />} />
+                            <StatCard number="99.9%" text={t("satisfaction-guaranteed")} icon={<Award className="h-8 w-8 text-white" />} />
                         </div>
                     </div>
                 </motion.div>
             </section>
-            <section id="serviços" className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
+            <section id="services" className="py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
                 <motion.div
                     className="max-w-7xl mx-auto"
                     initial={{ opacity: 0, y: 50 }}
@@ -213,11 +205,17 @@ export default function HomePage() {
                 >
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold">
-                            NOSSOS <span className="text-blue-600">SERVIÇOS</span>
+                            {/* NOSSOS <span className="text-blue-600">SERVIÇOS</span> */}
+                            <Trans
+                                i18nKey="our-services"
+                                components={[
+                                    <span />,
+                                    <span className="text-blue-600" />
+                                ]}
+                            />
                         </h2>
                         <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-                            Oferecemos uma ampla gama de serviços de tecnologia da informação para atender às necessidades específicas
-                            da sua empresa. Conheça nossas soluções:
+                            {t("our-services-description")}
                         </p>
                     </div>
                     <div>
@@ -247,52 +245,30 @@ export default function HomePage() {
                 >
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold">
-                            CASOS DE <span className="text-blue-600">SUCESSO</span>
+                            {/* CASOS DE <span className="text-blue-600">SUCESSO</span> */}
+                            <Trans
+                                i18nKey="cases-success"
+                                components={[
+                                    <span />,
+                                    <span className="text-blue-600" />
+                                ]}
+                            />
                         </h2>
                         <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-                            Conheça alguns dos nossos casos de sucesso e veja o que nossos clientes têm a dizer sobre nossos serviços.
+                            {t("cases-success-description")}
                         </p>
                     </div>
 
-                    <Carousel itemsPerPage={4} showArrows={false} preserveGrid={true} gridClassName="grid md:grid-cols-3 gap-8">
-                        {/* <TestimonialCard
-                            name="Migração de Infraestrutura de TI"
-                            position="Eventos e Turismo"
-                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mail foram transferidas com sucesso, incluindo assinaturas, agendas e permissões. Além disso, a empresa reformulou sua estrutura de e-mails e comunicação, segmentando empresas em diferentes Tenants do Office365 e ativando novos recursos de compartilhamento de arquivos via SharePoint. Também foi implementado o Microsoft Teams para reuniões via áudio e videoconferência. Com essas mudanças, a empresa agora possui uma infraestrutura de TI moderna e eficiente, que apoia suas operações diárias e contribui para seu crescimento contínuo."
-                            image="/placeholder.svg"
-                        />
-                        <TestimonialCard
-                            name="Migração de Infraestrutura de TI"
-                            position="Eventos e Turismo"
-                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mail foram transferidas com sucesso, incluindo assinaturas, agendas e permissões. Além disso, a empresa reformulou sua estrutura de e-mails e comunicação, segmentando empresas em diferentes Tenants do Office365 e ativando novos recursos de compartilhamento de arquivos via SharePoint. Também foi implementado o Microsoft Teams para reuniões via áudio e videoconferência. Com essas mudanças, a empresa agora possui uma infraestrutura de TI moderna e eficiente, que apoia suas operações diárias e contribui para seu crescimento contínuo."
-                            image="/placeholder.svg"
-                        />
-                        <TestimonialCard
-                            name="Migração de Infraestrutura de TI"
-                            position="Eventos e Turismo"
-                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mail foram transferidas com sucesso, incluindo assinaturas, agendas e permissões. Além disso, a empresa reformulou sua estrutura de e-mails e comunicação, segmentando empresas em diferentes Tenants do Office365 e ativando novos recursos de compartilhamento de arquivos via SharePoint. Também foi implementado o Microsoft Teams para reuniões via áudio e videoconferência. Com essas mudanças, a empresa agora possui uma infraestrutura de TI moderna e eficiente, que apoia suas operações diárias e contribui para seu crescimento contínuo."
-                            image="/placeholder.svg"
-                        /> */}
-
-                        {/* O trecho destacado contém **1.396 caracteres**, incluindo espaços. */}
-                        <TestimonialCard
-                            name="Migração de Infraestrutura de TI"
-                            position="Eventos e Turismo"
-                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mai"
-                            image="/placeholder.svg"
-                        />
-                        <TestimonialCard
-                            name="Migração de Infraestrutura de TI"
-                            position="Eventos e Turismo"
-                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mai"
-                            image="/placeholder.svg"
-                        />
-                        <TestimonialCard
-                            name="Migração de Infraestrutura de TI"
-                            position="Eventos e Turismo"
-                            testimonial="Uma empresa do setor de eventos e turismo contratou a BRQueiroz para migrar 700 caixas de e-mail do Exchange Server para o Exchange Online do Microsoft 365 e 14TB de dados de diferentes hosts Windows Server para o SharePoint Online. Durante a migração, todas as caixas de e-mai"
-                            image="/placeholder.svg"
-                        />
+                    <Carousel itemsPerPage={3} showArrows={false} preserveGrid={true} gridClassName="grid md:grid-cols-3 gap-8">
+                        {testimonials.map((testimonial, idx) => (
+                            <TestimonialCard
+                                key={idx}
+                                name={testimonial.title}
+                                position={testimonial.position}
+                                testimonial={testimonial.testimonial}
+                                image={testimonial.image}
+                            />
+                        ))}
                     </Carousel>
 
                     {/* <div className="mt-12 text-center">
