@@ -3,11 +3,18 @@ interface TestimonialCardProps {
   position: string
   testimonial: string
   image?: string
+  onClick?: () => void
+  style?: React.CSSProperties
 }
 
-export default function TestimonialCard({ name, position, testimonial, image }: TestimonialCardProps) {
+export default function TestimonialCard({ name, position, testimonial, image, onClick, style }: TestimonialCardProps) {
   return (
-    <div className="bg-white p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+    <div className="bg-white p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+      onClick={onClick}
+      style={style}
+      tabIndex={onClick ? 0 : undefined}
+      role={onClick ? "button" : undefined}
+    >
       <div className="flex items-center gap-4 mb-4">
         {/* {image && (
           <img

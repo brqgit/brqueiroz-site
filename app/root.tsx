@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   isRouteErrorResponse,
   Links,
@@ -6,10 +7,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
 import type { Route } from "./+types/root";
 import "./app.css";
-
 import "./i18n";
 
 export const links: Route.LinksFunction = () => [
@@ -26,11 +25,26 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  useEffect(() => {
+    const setFavicon = (theme: "dark" | "light") => {
+      const favicon = document.querySelector("link[rel~='icon']") as HTMLLinkElement | null;
+      if (favicon) {
+        favicon.href = theme === "dark" ? "/favicon-light.ico" : "/favicon-dark.ico";
+      }
+    };
+    const match = window.matchMedia("(prefers-color-scheme: dark)");
+    setFavicon(match.matches ? "dark" : "light");
+    const listener = (e: MediaQueryListEvent) => setFavicon(e.matches ? "dark" : "light");
+    match.addEventListener("change", listener);
+    return () => match.removeEventListener("change", listener);
+  }, []);
+
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon-light.ico" />
         <Meta />
         <Links />
       </head>
