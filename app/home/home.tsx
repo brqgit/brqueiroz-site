@@ -4,9 +4,10 @@ import { Award, CheckCircle, Clock, Users, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import AboutUs from "~/about-us/about-us";
-import Case from "~/case/case";
+import Case from "~/testimonial/testimonial";
 
 import LogoCarousel from "~/components/logo-carousel";
+import LogoCarouselOld from "~/components/logo-carousel-old";
 import ServiceCard from "~/components/service-card";
 import StatCard from "~/components/star-card";
 import TestimonialCard from "~/components/testimonial-card";
@@ -25,6 +26,7 @@ export default function HomePage() {
     return (
         <>
             <LogoCarousel />
+            {/* <LogoCarouselOld /> */}
             <section id="about-us" className="py-16 px-4 md:px-8 lg:px-16 bg-white overflow-hidden">
                 <motion.div
                     className="max-w-7xl mx-auto"
@@ -163,7 +165,16 @@ export default function HomePage() {
                                 onClick={() => setShowAbout(false)}
                                 aria-label="Fechar"
                             >
-                                <X className="h-14 w-14" />
+                                <motion.div
+                                    className="cursor-pointer"
+                                    whileHover={{
+                                        scale: 1.2,
+                                        rotate: 90,
+                                        transition: { duration: 0.2 }
+                                    }}
+                                >
+                                    <X className="h-14 w-14" />
+                                </motion.div>
                             </button>
                         </div>
                         <div className="w-full h-full flex flex-col hide-scrollbar">
@@ -262,7 +273,7 @@ export default function HomePage() {
                                 testimonial={testimonial.testimonial}
                                 image={testimonial.image}
                                 onClick={() => setShowCase(true)}
-                                style={{ cursor: "pointer" }}
+                                // style={{ cursor: "pointer" }}
                             />
                         ))}
                     </Carousel>
@@ -302,7 +313,16 @@ export default function HomePage() {
                                 onClick={() => setShowCase(false)}
                                 aria-label="Fechar"
                             >
-                                <X className="h-14 w-14" />
+                                <motion.div
+                                    className="cursor-pointer"
+                                    whileHover={{
+                                        scale: 1.2,
+                                        rotate: 90,
+                                        transition: { duration: 0.2 }
+                                    }}
+                                >
+                                    <X className="h-14 w-14" />
+                                </motion.div>
                             </button>
                         </div>
                         <div className="w-full h-full flex flex-col hide-scrollbar">

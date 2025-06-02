@@ -43,11 +43,15 @@ export default function AppNavbar() {
     >
       <div className="w-full max-w-7xl mx-auto px-5 flex justify-between items-center">
         <div className="text-2xl font-bold">
-          <img
+          <motion.img
             src="/logo-menu.svg"
             alt="Logo"
             className="w-23 h-auto cursor-pointer"
             draggable="false"
+            whileHover={{
+              scale: 1.1,
+              transition: { duration: 0.2 }
+            }}
             onClick={() => {
               const header = document.getElementById("header");
               if (header) {

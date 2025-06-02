@@ -3,6 +3,7 @@ export interface Testimonial {
     position: string;
     testimonial: string;
     image: string;
+    images: string[];
 }
 
 const testimonials: Testimonial[] = [
@@ -10,19 +11,37 @@ const testimonials: Testimonial[] = [
         title: "testimonials.1.title",
         position: "testimonials.1.position",
         testimonial: "testimonials.1.testimonial",
-        image: "/placeholder.svg"
+        image: "/placeholder.svg",
+        images: [
+            "/placeholder.svg",
+            "/placeholder.svg",
+            "/placeholder.svg",
+            "/placeholder.svg",
+        ]
     },
     {
         title: "testimonials.2.title",
         position: "testimonials.2.position",
         testimonial: "testimonials.2.testimonial",
-        image: "/placeholder.svg"
+        image: "/placeholder.svg",
+        images: [
+            "/placeholder.svg",
+            "/placeholder.svg",
+            "/placeholder.svg",
+            "/placeholder.svg",
+        ]
     },
     {
         title: "testimonials.3.title",
         position: "testimonials.3.position",
         testimonial: "testimonials.3.testimonial",
-        image: "/placeholder.svg"
+        image: "/placeholder.svg",
+        images: [
+            "/placeholder.svg",
+            "/placeholder.svg",
+            "/placeholder.svg",
+            "/placeholder.svg",
+        ]
     }
 ];
 
