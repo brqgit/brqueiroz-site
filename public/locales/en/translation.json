@@ -11,7 +11,7 @@
         "h4": "For a company to grow strong and solid, invest in the best available"
     },
     "footer": {
-        "description": "Information technology solutions for over 20 years, bringing the best to Ribeirão Preto and the surrounding region",
+        "description": "Information technology solutions for over 20 years, bringing the best to all of Latin America.",
         "services": "Services",
         "quick-links": "Quick Links",
         "contact": "Contact",
@@ -66,6 +66,7 @@
     "projects-completed": "Projects Completed",
     "satisfaction-guaranteed": "Satisfaction Guaranteed",
     "learn-more": "Learn more",
+    "read-more": "Read more",
     "articles": {
         "1": {
             "title": "The Invisible Force Behind Your Company's Technology",
@@ -102,7 +103,7 @@
             ]
         },
         "consulting": {
-            "title": "Consulting",
+            "title": "Technical Consulting",
             "description": "Plan the best route for quality solutions. Our team of specialists analyzes your current infrastructure and proposes strategic improvements to optimize your technological resources.",
             "shortDescription": "",
             "fullDescription": [
@@ -115,7 +116,7 @@
             ]
         },
         "infrastructure": {
-            "title": "Infrastructure",
+            "title": "IT Infrastructure",
             "description": "Essential structure for solid growth. We implement and manage your company's entire IT infrastructure, ensuring stability, security, and high performance.",
             "shortDescription": "",
             "fullDescription": [
@@ -212,6 +213,40 @@
             "title": "Certification, Connectorization, and WiFi Coverage",
             "position": "Orofacial Education Institutes",
             "testimonial": "We implemented wired and UniFI U6 WiFi networks in branches across Brazil, ensuring high performance, low latency, and efficient coverage. Certification, connectorization, technical compliance, and stable operation."
+        },
+        "4": {
+            "title": "Data Center Migration and Network Infrastructure",
+            "position": "Sugar and Energy Sector Company",
+            "testimonial": "We performed the Data Center Migration with rack assembly, cable routing and certification, fiber optic fusion, and DIO assembly with high technical precision.",
+            "fullDescription": [
+                "We performed a complete corporate data center migration, with technical monitoring from the beginning of construction until the final delivery of the fully functioning environment. The project involved physical relocation of existing racks, assembly of new racks, organization and routing of structured cabling (copper and fiber optic), as well as assembly and organization of ODFs (Optical Distribution Frames).",
+                "Network point certification was performed with professional equipment, ensuring compliance with technical standards and guaranteeing infrastructure reliability. Fiber optic fusion was executed with precision, using high-technology equipment to ensure extremely low loss and high performance in data transmission.",
+                "The entire environment was planned to offer scalability, security, and energy efficiency, focusing on operational continuity and ease of maintenance. Cable organization and rack assembly followed market best practices, resulting in a clean, functional data center prepared for future expansions."
+            ]
+        },
+        "5": {
+            "title": "Network Infrastructure Standardization and Certification with Structured Cabling",
+            "position": "Small, Medium and Large Companies",
+            "testimonial": "Network infrastructure project focused on structured cabling, physical organization, logical mapping, and technical certification using Lantek-IVS equipment. The solution was developed to ensure performance, standardization, and scalability of the corporate network.",
+            "fullDescription": [
+                "This project was developed to serve companies of different sizes, with the goal of structuring and optimizing local network infrastructure. The execution involved: ",
+                "Complete structured cabling, with installation of network cables (copper and/or fiber optic) according to technical standards and international protocols.",
+                "Physical organization of network points, with clear and standardized identification of racks, patch panels, and access points.",
+                "Logical network mapping, documenting connections, topology, and active devices, facilitating future maintenance and expansions.",
+                "Technical certification of all network points using Lantek-IVS equipment, ensuring compliance with performance and quality requirements.",
+                "Visual and functional standardization, promoting a clean, safe, and efficient environment, focused on operational continuity and fault reduction.",
+                "The project was planned to offer scalability, reliability, and ease of management, ideal for corporate environments that demand high availability and organized IT infrastructure."
+            ]
+        },
+        "6": {
+            "title": "Certification, Connectorization, and WiFi Coverage",
+            "position": "Orofacial Education Institutes",
+            "testimonial": "We implemented wired and WiFi UniFi U6 networks in branches across Brazil, ensuring high performance, low latency, and efficient coverage. Certification, connectorization, technical compliance, and stable operation.",
+            "fullDescription": [
+                "We implemented a high-performance wired and Wi-Fi network infrastructure using UniFi U6 Access Points in various branches across the country, including Teresina, Maringá, Ribeirão Preto, and Maranhão. The project was carefully planned and executed to ensure low latency, high availability, and efficient coverage in all environments.",
+                "All network points were certified with professional Lantek IVS equipment, ensuring compliance with the required technical standards and guaranteeing stable and secure operation. Connectorization was performed with precision, using high-quality materials to ensure durability and performance.",
+                "The UniFi U6 Access Points stand out not only for their performance but also for their discreet and modern design, which integrates seamlessly into the corporate environment, maintaining the aesthetics of the spaces without compromising network efficiency."
+            ]
         }
     },
     "pageServices": {
@@ -227,5 +262,58 @@
         "contact-us": "Contact our team to ask questions or request a personalized quote.",
         "request-contact": "Request Contact",
         "overview": "Overview"
+    },
+    "privacyPolicy": {
+        "title": "Privacy Policy",
+        "intro": "This Privacy Policy describes how your personal information is collected, used, and shared when you visit or use our website, in compliance with the Brazilian General Data Protection Law (LGPD - Law No. 13,709/2018).",
+        "collection": {
+            "title": "Information Collection and Use",
+            "text": "We collect personal information voluntarily provided by you, such as name, email, and other contact information, to improve your experience on our website. We use this data only for the purposes described in this policy."
+        },
+        "legalBasis": {
+            "title": "Legal Basis for Data Processing",
+            "intro": "The processing of personal data carried out on this website complies with LGPD. According to Art. 7 of the Law, personal data processing may only be carried out in the following cases:",
+            "items": [
+                "With consent from the data subject",
+                "To comply with legal or regulatory obligation",
+                "When necessary for the execution of a contract or preliminary procedures related to a contract",
+                "When necessary to serve the legitimate interests of the controller or third party"
+            ]
+        },
+        "cookies": {
+            "title": "Cookies",
+            "text": "Our website may use cookies to customize your browsing experience and analyze traffic. You can choose to disable cookies in your browser settings, but this may affect some website functionalities."
+        },
+        "sharing": {
+            "title": "Data Sharing",
+            "text": "We do not share your personal information with third parties, except when required by law or to protect our rights."
+        },
+        "security": {
+            "title": "Security",
+            "text": "We adopt security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction."
+        },
+        "rights": {
+            "title": "Data Subject Rights",
+            "intro": "According to Art. 18 of LGPD, the data subject has the right to obtain from the controller, in relation to their processed data, at any time and upon request:",
+            "items": [
+                "Confirmation of processing existence",
+                "Access to data",
+                "Correction of incomplete, inaccurate or outdated data",
+                "Anonymization, blocking or elimination of unnecessary data",
+                "Data portability to another service provider",
+                "Deletion of personal data processed with consent",
+                "Information about data sharing",
+                "Information about the possibility of not providing consent",
+                "Revocation of consent"
+            ]
+        },
+        "changes": {
+            "title": "Changes to This Policy",
+            "text": "We may update this Privacy Policy periodically. We recommend that you review this page regularly to stay aware of any changes."
+        },
+        "contact": {
+            "title": "Contact for Rights Exercise",
+            "text": "To exercise your rights under LGPD, please contact us."
+        }
     }
 }

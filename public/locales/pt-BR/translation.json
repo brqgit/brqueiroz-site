@@ -11,7 +11,7 @@
         "h4": "Para uma empresa crescer sólida e com força, invista no que há de melhor"
     },
     "footer": {
-        "description": "Soluções em tecnologia da informação há mais de 20 anos, trazendo o que há de melhor para Ribeirão Preto e região",
+        "description": "Soluções em tecnologia da informação há mais de 20 anos, trazendo o que há de melhor para toda a América Latina.",
         "services": "Serviços",
         "quick-links": "Links Rápidos",
         "contact": "Contato",
@@ -66,6 +66,7 @@
     "projects-completed": "Projetos Realizados",
     "satisfaction-guaranteed": "Satisfação Garantida",
     "learn-more": "Saiba mais",
+    "read-more": "Leia mais",
     "articles": {
         "1": {
             "title": "O invisível que sustenta a tecnologia da sua empresa",
@@ -102,7 +103,7 @@
             ]
         },
         "consulting": {
-            "title": "Consultoria",
+            "title": "Consultoria Técnica",
             "description": "Planeje a melhor rota para soluções de qualidade. Nossa equipe de especialistas analisa sua infraestrutura atual e propõe melhorias estratégicas para otimizar seus recursos tecnológicos.",
             "shortDescription": "",
             "fullDescription": [
@@ -115,7 +116,7 @@
             ]
         },
         "infrastructure": {
-            "title": "Infraestrutura",
+            "title": "Infraestrutura de TI",
             "description": "Estrutura essencial para um crescimento sólido. Implementamos e gerenciamos toda a infraestrutura de TI da sua empresa, garantindo estabilidade, segurança e alto desempenho.",
             "shortDescription": "",
             "fullDescription": [
@@ -212,6 +213,40 @@
             "title": "Certificação, Conectorização e cobertura WiFi",
             "position": "Institutos de Educação Orofacial",
             "testimonial": "Implementamos rede cabeada e WiFi UniFI U6 em filias no Brasil, garantido alta perfomance, baixa latência e cobertura eficiente. Certificação, conectorização conformidade técnica e operação estável."
+        },
+        "4": {
+            "title": "Migração de Datacenter e Infraestrutura de Rede",
+            "position": "Empresa do Setor Sucroenergético",
+            "testimonial": "Realizamos o Datacenter Migration com montagem de racks, passagem e certificação de cabos, fusão de fibra óptica e montagem de DIOs com alta precisão técnica.",
+            "fullDescription": [
+                "Realizamos a migração completa de um datacenter corporativo, com acompanhamento técnico desde o início da obra até a entrega final do ambiente em pleno funcionamento. O projeto envolveu a movimentação física de racks existentes, montagem de novos racks, organização e passagem de cabeamento estruturado (cobre e fibra óptica), além da montagem e organização de DIOs (Distribuidores Internos Ópticos).",
+                "A certificação dos pontos de rede foi feita com equipamentos profissionais, assegurando conformidade com os padrões técnicos e garantindo a confiabilidade da infraestrutura. A fusão de fibras ópticas foi executada com precisão, utilizando equipamentos de alta tecnologia para assegurar baixíssima perda e alta performance na transmissão de dados.",
+                "Todo o ambiente foi planejado para oferecer escalabilidade, segurança e eficiência energética, com foco na continuidade operacional e facilidade de manutenção. A organização dos cabos e a montagem dos racks seguiram as melhores práticas do mercado, resultando em um datacenter limpo, funcional e preparado para futuras expansões."
+            ]
+        },
+        "5": {
+            "title": "Padronização e Certificação de Infraestrutura de Rede com Cabeamento Estruturado",
+            "position": "Empresas de Pequeno, Médio e Grande Porte",
+            "testimonial": "Projeto de infraestrutura de rede com foco em cabeamento estruturado, organização física, mapeamento lógico e certificação técnica utilizando equipamentos Lantek-IVS. A solução foi desenvolvida para garantir desempenho, padronização e escalabilidade da rede corporativa.",
+            "fullDescription": [
+                "Este projeto foi desenvolvido para atender empresas de diferentes portes, com o objetivo de estruturar e otimizar a infraestrutura de rede local. A execução envolveu: ",
+                "Cabeamento estruturado completo, com instalação de cabos de rede (cobre e/ou fibra óptica) conforme normas técnicas e padrões internacionais.",
+                "Organização física dos pontos de rede, com identificação clara e padronizada de racks, patch panels e pontos de acesso.",
+                "Mapeamento lógico da rede, documentando conexões, topologia e dispositivos ativos, facilitando futuras manutenções e expansões.",
+                "Certificação técnica de todos os pontos de rede, utilizando equipamentos Lantek-IVS, assegurando conformidade com os requisitos de desempenho e qualidade.",
+                "Padronização visual e funcional, promovendo um ambiente limpo, seguro e eficiente, com foco na continuidade operacional e redução de falhas. ",
+                "O projeto foi planejado para oferecer escalabilidade, confiabilidade e facilidade de gestão, sendo ideal para ambientes corporativos que demandam alta disponibilidade e organização da infraestrutura de TI. "
+            ]
+        },
+        "6": {
+            "title": "Certificação, Conectorização e cobertura WiFi",
+            "position": "Institutos de Educação Orofacial",
+            "testimonial": "Implementamos rede cabeada e WiFi UniFi U6 em filiais no Brasil, garantido alta performance, baixa latência e cobertura eficiente. Certificação, conectorização conformidade técnica e operação estável.",
+            "fullDescription": [
+                "Implementamos uma infraestrutura de rede cabeada e Wi-Fi de alta performance utilizando Access Points UniFi U6 em diversas filiais espalhadas pelo território nacional, incluindo Teresina, Maringá, Ribeirão Preto e Maranhão. O projeto foi cuidadosamente planejado e executado para garantir baixa latência, alta disponibilidade e cobertura eficiente em todos os ambientes.",
+                "Todos os pontos de rede foram certificados com o equipamento profissional Lantek IVS, assegurando conformidade com os padrões técnicos exigidos e garantindo uma operação estável e segura. A conectorização foi realizada com precisão, utilizando materiais de alta qualidade para assegurar durabilidade e desempenho.",
+                "Os Access Points UniFi U6 se destacam não apenas pela performance, mas também pelo design discreto e moderno, que se integra perfeitamente ao ambiente corporativo, mantendo a estética dos espaços sem comprometer a eficiência da rede."
+            ]
         }
     },
     "pageServices": {
@@ -227,5 +262,58 @@
         "contact-us": "Entre em contato com nossa equipe para tirar dúvidas ou solicitar um orçamento personalizado.",
         "request-contact": "Solicitar Contato",
         "overview": "Visão Geral"
+    },
+    "privacyPolicy": {
+        "title": "Política de Privacidade",
+        "intro": "Esta Política de Privacidade descreve como suas informações pessoais são coletadas, usadas e compartilhadas quando você visita ou utiliza nosso site, em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018).",
+        "collection": {
+            "title": "Coleta e Uso de Informações",
+            "text": "Coletamos informações pessoais fornecidas voluntariamente por você, como nome, e-mail e outras informações de contato, para melhorar sua experiência em nosso site. Utilizamos esses dados apenas para os fins descritos nesta política."
+        },
+        "legalBasis": {
+            "title": "Base Legal para Tratamento de Dados",
+            "intro": "O tratamento de dados pessoais realizado neste site está em conformidade com a LGPD. Conforme o Art. 7º da Lei, o tratamento de dados pessoais somente poderá ser realizado nas seguintes hipóteses:",
+            "items": [
+                "Mediante o fornecimento de consentimento pelo titular",
+                "Para o cumprimento de obrigação legal ou regulatória pelo controlador",
+                "Quando necessário para a execução de contrato ou de procedimentos preliminares relacionados a contrato do qual seja parte o titular",
+                "Quando necessário para atender aos interesses legítimos do controlador ou de terceiro"
+            ]
+        },
+        "cookies": {
+            "title": "Cookies",
+            "text": "Nosso site pode utilizar cookies para personalizar sua navegação e analisar o tráfego. Você pode optar por desabilitar os cookies nas configurações do seu navegador, mas isso pode afetar algumas funcionalidades do site."
+        },
+        "sharing": {
+            "title": "Compartilhamento de Dados",
+            "text": "Não compartilhamos suas informações pessoais com terceiros, exceto quando exigido por lei ou para proteger nossos direitos."
+        },
+        "security": {
+            "title": "Segurança",
+            "text": "Adotamos medidas de segurança para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição."
+        },
+        "rights": {
+            "title": "Direitos do Titular dos Dados",
+            "intro": "De acordo com o Art. 18 da LGPD, o titular dos dados pessoais tem direito a obter do controlador, em relação aos dados por ele tratados, a qualquer momento e mediante requisição:",
+            "items": [
+                "Confirmação da existência de tratamento",
+                "Acesso aos dados",
+                "Correção de dados incompletos, inexatos ou desatualizados",
+                "Anonimização, bloqueio ou eliminação de dados desnecessários",
+                "Portabilidade dos dados a outro fornecedor",
+                "Eliminação dos dados pessoais tratados com consentimento",
+                "Informação sobre compartilhamento de dados",
+                "Informação sobre o não fornecimento de consentimento",
+                "Revogação do consentimento"
+            ]
+        },
+        "changes": {
+            "title": "Alterações nesta Política",
+            "text": "Podemos atualizar esta Política de Privacidade periodicamente. Recomendamos que você revise esta página regularmente para estar ciente de quaisquer alterações."
+        },
+        "contact": {
+            "title": "Contato para Exercício de Direitos",
+            "text": "Para exercer seus direitos previstos na LGPD, entre em contato pelo e-mail."
+        }
     }
 }
