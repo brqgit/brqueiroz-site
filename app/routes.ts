@@ -11,5 +11,6 @@ export default [
   layout("layout.tsx", [
     route("home", "routes/home.tsx"),
     route("services", "routes/services.tsx"),
+    route("privacy-policy", "routes/privacy-policy.tsx"),
   ])
 ] satisfies RouteConfig;

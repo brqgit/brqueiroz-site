@@ -51,7 +51,7 @@ const services: ServiceType[] = [
     description: "services.microsoft-365.description",
     shortDescription: "services.microsoft-365.shortDescription",
     icon: <Laptop className="h-10 w-10 text-[#1c5abd]" />,
-    image: "/services/1.gif",
+    image: "/services/microsoft-365.gif",
     fullDescription: "services.microsoft-365.fullDescription"
   },
   {
@@ -60,7 +60,7 @@ const services: ServiceType[] = [
     description: "services.consulting.description",
     shortDescription: "services.consulting.shortDescription",
     icon: <LineChart className="h-10 w-10 text-[#1c5abd]" />,
-    image: "",
+    image: "/services/consulting.gif",
     fullDescription: "services.consulting.fullDescription"
   },
   {
@@ -69,7 +69,7 @@ const services: ServiceType[] = [
     description: "services.infrastructure.description",
     shortDescription: "services.infrastructure.shortDescription",
     icon: <Server className="h-10 w-10 text-[#1c5abd]" />,
-    image: "",
+    image: "/services/infrastructure.gif",
     fullDescription: "services.infrastructure.fullDescription"
   },
   {
@@ -78,7 +78,7 @@ const services: ServiceType[] = [
     description: "services.security.description",
     shortDescription: "services.security.shortDescription",
     icon: <Shield className="h-10 w-10 text-[#1c5abd]" />,
-    image: "",
+    image: "/services/security.gif",
     fullDescription: "services.security.fullDescription"
   },
   {
@@ -87,7 +87,7 @@ const services: ServiceType[] = [
     description: "services.cloud.description",
     shortDescription: "services.cloud.shortDescription",
     icon: <Cloud className="h-10 w-10 text-[#1c5abd]" />,
-    image: "",
+    image: "/services/cloud.gif",
     fullDescription: "services.cloud.fullDescription"
   },
   {
@@ -96,7 +96,7 @@ const services: ServiceType[] = [
     description: "services.networking.description",
     shortDescription: "services.networking.shortDescription",
     icon: <Network className="h-10 w-10 text-[#1c5abd]" />,
-    image: "",
+    image: "/services/networking.gif",
     fullDescription: "services.networking.fullDescription"
   },
   {
@@ -105,7 +105,7 @@ const services: ServiceType[] = [
     description: "services.support.description",
     shortDescription: "services.support.shortDescription",
     icon: <Zap className="h-10 w-10 text-[#1c5abd]" />,
-    image: "",
+    image: "/services/support.gif",
     fullDescription: "services.support.fullDescription"
   },
   {
@@ -114,7 +114,7 @@ const services: ServiceType[] = [
     description: "services.virtualization.description",
     shortDescription: "services.virtualization.shortDescription",
     icon: <Cpu className="h-10 w-10 text-[#1c5abd]" />,
-    image: "",
+    image: "/services/virtualization.gif",
     fullDescription: "services.virtualization.fullDescription"
   },
   {
@@ -123,7 +123,7 @@ const services: ServiceType[] = [
     description: "services.structured-cabling.description",
     shortDescription: "services.structured-cabling.shortDescription",
     icon: <Network className="h-10 w-10 text-[#1c5abd]" />,
-    image: "",
+    image: "/services/structured-cabling.gif",
     fullDescription: "services.structured-cabling.fullDescription"
   }
 ];
@@ -136,7 +136,7 @@ export function getAllServices(t: (key: string, options?: any) => any): ServiceT
     shortDescription: t(item.shortDescription),
     fullDescription: typeof item.fullDescription === "string"
       ? t(item.fullDescription, { returnObjects: true })
-      : item.fullDescription,
+      : item.fullDescription
   }));
 }
 
@@ -150,6 +150,6 @@ export function getServiceBySlug(slug: string, t: (key: string, options?: any) =
     shortDescription: t(service.shortDescription),
     fullDescription: typeof service.fullDescription === "string"
       ? t(service.fullDescription, { returnObjects: true })
-      : service.fullDescription,
+      : service.fullDescription
   };
 }

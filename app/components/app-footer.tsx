@@ -70,6 +70,11 @@ export default function AppFooter() {
                                     {toCamelCase(t("navbar.contact"))}
                                 </a>
                             </li>
+                            <li>
+                                <a href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">
+                                    {toCamelCase(t("privacyPolicy.title"))}
+                                </a>
+                            </li>
                         </ul>
                     </div>
 

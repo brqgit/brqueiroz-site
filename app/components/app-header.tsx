@@ -81,7 +81,7 @@ export default function AppHeader() {
                                 {t("header.h4")}
                             </h4>
 
-                            <hr className="border-t border-white my-6 w-25 m-auto md:ml-auto" />
+                            <hr className="border-t border-white my-6 w-25 m-auto md:mr-0" />
 
                             <div className="flex justify-center md:justify-end mt-4 flex-wrap gap-2">
                                 <a

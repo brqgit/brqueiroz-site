@@ -5,7 +5,7 @@ import AppFooter from "~/components/app-footer";
 
 export default function AppLayout() {
   const location = useLocation();
-  const isNotServiceRoute = !location.pathname.startsWith("/services")
+  const isNotServiceRoute = !location.pathname.startsWith("/services") && !location.pathname.startsWith("/privacy-policy")
 
   return (
     <div>

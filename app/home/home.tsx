@@ -4,8 +4,10 @@ import { Award, CheckCircle, Clock, Users, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import AboutUs from "~/about-us/about-us";
+import Case from "~/testimonial/testimonial";
 
 import LogoCarousel from "~/components/logo-carousel";
+import LogoCarouselOld from "~/components/logo-carousel-old";
 import ServiceCard from "~/components/service-card";
 import StatCard from "~/components/star-card";
 import TestimonialCard from "~/components/testimonial-card";
@@ -14,15 +16,20 @@ import { Carousel } from "~/components/carousel";
 import { getAllServices } from "~/lib/services";
 import { getAllTestimonials } from "~/lib/testimonials";
 
+import type { Testimonial } from "~/types/testimonials";
+
 export default function HomePage() {
     const { t } = useTranslation();
     const services = getAllServices(t);
     const testimonials = getAllTestimonials(t);
+    const [selectedTestimonial, setSelectedTestimonial] = useState<Testimonial | null>(null);
     const [showAbout, setShowAbout] = useState(false);
+    const [showCase, setShowCase] = useState(false);
 
     return (
         <>
             <LogoCarousel />
+            {/* <LogoCarouselOld /> */}
             <section id="about-us" className="py-16 px-4 md:px-8 lg:px-16 bg-white overflow-hidden">
                 <motion.div
                     className="max-w-7xl mx-auto"
@@ -40,7 +47,6 @@ export default function HomePage() {
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true, amount: 0.2 }}
                             >
-                                {/* SOBRE <span className="text-blue-600">NÓS</span> */}
                                 <Trans
                                     i18nKey="about-us"
                                     components={[
@@ -57,16 +63,16 @@ export default function HomePage() {
                                     transition={{ duration: 0.8 }}
                                     viewport={{ once: true, amount: 0.2 }}
                                 >
-                                    <p className="text-gray-700">
+                                    <p className="text-gray-700 text-justify">
                                         {t("home.about.p1")}
                                     </p>
-                                    <p className="text-gray-700">
+                                    <p className="text-gray-700 text-justify">
                                         {t("home.about.p2")}
                                     </p>
-                                    <p className="text-gray-700">
+                                    <p className="text-gray-700 text-justify">
                                         {t("home.about.p3")}
                                     </p>
-                                    <p className="text-gray-700">
+                                    <p className="text-gray-700 text-justify">
                                         {t("home.about.p4")}
                                     </p>
                                 </motion.div>
@@ -121,11 +127,6 @@ export default function HomePage() {
                             </div>
                         </div>
                         <div className="mt-12 text-center">
-                            {/* <button
-                                className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                            >
-                                Saiba mais
-                            </button> */}
                             <button
                                 className="inline-flex items-center justify-center px-6 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-medium text-base transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 transform hover:scale-105"
                                 onClick={() => setShowAbout(true)}
@@ -167,7 +168,16 @@ export default function HomePage() {
                                 onClick={() => setShowAbout(false)}
                                 aria-label="Fechar"
                             >
-                                <X className="h-14 w-14" />
+                                <motion.div
+                                    className="cursor-pointer"
+                                    whileHover={{
+                                        scale: 1.2,
+                                        rotate: 90,
+                                        transition: { duration: 0.2 }
+                                    }}
+                                >
+                                    <X className="h-14 w-14" />
+                                </motion.div>
                             </button>
                         </div>
                         <div className="w-full h-full flex flex-col hide-scrollbar">
@@ -205,7 +215,6 @@ export default function HomePage() {
                 >
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold">
-                            {/* NOSSOS <span className="text-blue-600">SERVIÇOS</span> */}
                             <Trans
                                 i18nKey="our-services"
                                 components={[
@@ -245,7 +254,6 @@ export default function HomePage() {
                 >
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold">
-                            {/* CASOS DE <span className="text-blue-600">SUCESSO</span> */}
                             <Trans
                                 i18nKey="cases-success"
                                 components={[
@@ -267,6 +275,11 @@ export default function HomePage() {
                                 position={testimonial.position}
                                 testimonial={testimonial.testimonial}
                                 image={testimonial.image}
+                                onClick={() => {
+                                    setSelectedTestimonial(testimonial)
+                                    setShowCase(true)
+                                }}
+                            // style={{ cursor: "pointer" }}
                             />
                         ))}
                     </Carousel>
@@ -278,6 +291,55 @@ export default function HomePage() {
                     </div> */}
                 </motion.div>
             </section>
+
+            <AnimatePresence>
+                {showCase && (
+                    <motion.div
+                        className="fixed inset-0 z-50 bg-white"
+                        initial={{ opacity: 0, scale: 0.96 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.96 }}
+                        transition={{ duration: 0.8, ease: [0.4, 0, 0.2, 1] }}
+                        style={{
+                            overflowY: "auto",
+                            scrollbarWidth: "none",
+                            msOverflowStyle: "none",
+                        }}
+                    >
+                        <style>
+                            {`
+                .hide-scrollbar::-webkit-scrollbar {
+                    display: none;
+                }
+                `}
+                        </style>
+                        <div className="absolute top-0 right-0 p-6 z-10">
+                            <button
+                                className="text-white font-bold text-lg"
+                                onClick={() => {
+                                    setShowCase(false)
+                                    setSelectedTestimonial(null)
+                                }}
+                                aria-label="Fechar"
+                            >
+                                <motion.div
+                                    className="cursor-pointer"
+                                    whileHover={{
+                                        scale: 1.2,
+                                        rotate: 90,
+                                        transition: { duration: 0.2 }
+                                    }}
+                                >
+                                    <X className="h-14 w-14" />
+                                </motion.div>
+                            </button>
+                        </div>
+                        <div className="w-full h-full flex flex-col hide-scrollbar">
+                            <Case testimonial={selectedTestimonial} />
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </>
     );
 }
