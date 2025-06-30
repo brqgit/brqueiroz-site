@@ -491,8 +491,8 @@ A aplicação detecta automaticamente o ambiente baseado no domínio para intern
 
 ## 📞 Suporte
 
-Para dúvidas ou suporte técnico, entre em contato com a equipe de desenvolvimento da BRQueiroz.
+Para dúvidas ou suporte técnico, entre em contato com a equipe de desenvolvimento responsável pelo projeto.
 
 ---
 
-**Desenvolvido com ❤️ pela BRQueiroz**
+**Desenvolvido com ❤️ para BRQueiroz**
