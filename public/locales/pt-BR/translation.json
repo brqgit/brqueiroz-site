@@ -1,0 +1,336 @@
+{
+    "navbar": {
+        "about-us": "SOBRE NÓS",
+        "services": "SERVIÇOS",
+        "cases": "CASES",
+        "contact": "CONTATO"
+    },
+    "header": {
+        "h2": "A TECNOLOGIA QUE SUA EMPRESA PRECISA PARA",
+        "h1": "ATINGIR O <0>PRÓXIMO NÍVEL</0>",
+        "h4": "Para uma empresa crescer sólida e com força, invista no que há de melhor"
+    },
+    "footer": {
+        "description": "Soluções em tecnologia da informação há mais de 20 anos, trazendo o que há de melhor para toda a América Latina.",
+        "services": "Serviços",
+        "quick-links": "Links Rápidos",
+        "contact": "Contato",
+        "copyright": "BRQueiroz. Todos os direitos reservados."
+    },
+    "home": {
+        "about": {
+            "p1": "A BRQueiroz foi idealizada com base no crescimento constante que o mundo digital tem tido, que gera a necessidade de soluções objetivas e confiáveis na estruturação e crescimento de uma empresa.",
+            "p2": "Agora com mais de 20 anos no mercado, a BRQueiroz se mostra como uma empresa sólida e confiável, trazendo soluções de qualidade para seus clientes. Nossa equipe é formada por profissionais altamente qualificados e certificados nas principais tecnologias do mercado.",
+            "p3": "Nosso compromisso é oferecer soluções personalizadas que atendam às necessidades específicas de cada cliente, garantindo a máxima eficiência e segurança em todos os projetos. Trabalhamos com as melhores práticas do mercado e estamos sempre atualizados com as últimas tendências tecnológicas.",
+            "p4": "Atendemos empresas de todos os portes e segmentos, desde pequenas empresas até grandes corporações, sempre com o mesmo nível de excelência e dedicação. Nossa missão é ser um parceiro estratégico para nossos clientes, ajudando-os a alcançar seus objetivos de negócio através da tecnologia."
+        }
+    },
+    "about-us": "<0>SOBRE</0> <1>NÓS</1>",
+    "about": {
+        "h1": "<0>SOBRE</0> <1>NÓS</1>",
+        "cio-title": "Diretor de Tecnologia (CIO)",
+        "ceo-founder-title": "CEO & Fundador | BRQueiroz",
+        "p1": " A BRQueiroz foi idealizada com base no crescimento constante que o mundo digital tem tido, que gera a necessidade de soluções objetivas e confiáveis na estruturação e crescimento de uma empresa.",
+        "p2": " Agora com mais de 20 anos no mercado, a BRQueiroz se mostra como referência em soluções de tecnologia da informação, trazendo o que há de melhor em soluções de T.I. para Ribeirão Preto e região.",
+        "values": [
+            {
+                "name": "Confiabilidade",
+                "desc": "Compromisso com soluções confiáveis"
+            },
+            {
+                "name": "Experiência",
+                "desc": "Mais de 20 anos no mercado de TI"
+            },
+            {
+                "name": "Engajamento",
+                "desc": "Comprometimento com cada projeto"
+            },
+            {
+                "name": "Segurança",
+                "desc": "Proteção de dados e infraestrutura"
+            }
+        ],
+        "h2": "<0>VALORES QUE</0><1></1><2>NOS GUIAM</2>",
+        "p3": " Na BRQueiroz, nossos valores são os pilares que sustentam todas as nossas operações e relacionamentos. Eles refletem quem somos e como trabalhamos para oferecer as melhores soluções em tecnologia da informação.",
+        "h2-partners": "<0>NOSSOS</0> <1>PARCEIROS</1>",
+        "p4": " Trabalhamos com as melhores empresas de tecnologia do mundo para oferecer soluções de alta qualidade para nossos clientes.",
+        "ready-elevate-technologies": "Pronto para elevar sua tecnologia?",
+        "p5": "Entre em contato conosco e descubra como podemos ajudar sua empresa a atingir o próximo nível com nossas soluções de tecnologia."
+    },
+    "our-services": "<0>NOSSOS</0> <1>SERVIÇOS</1>",
+    "our-services-description": "Oferecemos uma ampla gama de serviços de tecnologia da informação para atender às necessidades específicas da sua empresa. Conheça nossas soluções:",
+    "cases-success": "<0>CASOS DE</0> <1>SUCESSO</1>",
+    "cases-success-description": "Conheça alguns dos nossos casos de sucesso e veja o que nossos clientes têm a dizer sobre nossos serviços.",
+    "talk-to-us": "Fale conosco",
+    "contact-us": "Entre em contato",
+    "years-of-experience": "Anos de Experiência",
+    "clients-served": "Clientes Atendidos",
+    "projects-completed": "Projetos Realizados",
+    "satisfaction-guaranteed": "Satisfação Garantida",
+    "learn-more": "Saiba mais",
+    "read-more": "Leia mais",
+    "articles": {
+        "1": {
+            "title": "O invisível que sustenta a tecnologia da sua empresa",
+            "description": "A integridade da infraestrutura de TI e automação é essencial para a estabilidade das operações.",
+            "content": "A BRQueiroz oferece inspeção óptica de alta precisão para garantir a integridade da infraestrutura de TI e automação industrial, prevenindo falhas invisíveis e aumentando a confiabilidade dos processos.",
+            "alt": "Imagem representando tecnologia invisível"
+        },
+        "2": {
+            "title": "BRQueiroz Inicia Uma Nova Era com o LanTEK IV-S",
+            "description": "Inovação e tecnologia de ponta para certificação de redes de dados.",
+            "content": "BRQueiroz inicia o processo de Trade In para adquirir o LanTEK IV-S da TREND Networks, o mais moderno equipamento para certificação de redes de dados em cobre e fibra óptica, mantendo o compromisso de alta qualidade na transmissão de dados.",
+            "alt": "Imagem do LanTEK IV-S"
+        },
+        "3": {
+            "title": "BRQueiroz: Tecnologia para Usinas de Açúcar e Álcool",
+            "description": "Soluções tecnológicas para aumentar a produtividade e segurança operacional das usinas.",
+            "content": "A BRQueiroz oferece soluções tecnológicas para usinas de açúcar e álcool, com infraestrutura de ponta, monitoramento 24/7, segurança digital robusta e suporte especializado. Garantimos eficiência, produtividade e segurança para sua operação.",
+            "alt": "Imagem representando usinas de açúcar e álcool"
+        }
+    },
+    "services": {
+        "microsoft-365": {
+            "title": "Microsoft 365",
+            "description": "Transforme sua empresa com nossa consultoria em Microsoft 365. Analisamos sua infraestrutura, implementamos soluções personalizadas e otimizamos processos, colaborando para aumentar a produtividade e eficiência.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Nossa consultoria em Microsoft 365 proporciona uma análise abrangente e estratégica da infraestrutura tecnológica da sua empresa, destacando áreas para melhoria, redução de custos e aumento de produtividade.",
+                "Com uma equipe de especialistas altamente qualificados, realizamos um diagnóstico detalhado da sua estrutura de TI atual, incluindo hardware, software, redes, segurança, processos e pessoas.",
+                "A partir desse diagnóstico, desenvolvemos um plano estratégico personalizado alinhado aos objetivos de negócio da sua empresa, com recomendações claras e priorizadas para implementação.",
+                "Implementamos soluções Microsoft 365 que podem incluir configuração e integração de aplicativos como Microsoft Teams, SharePoint, Exchange Online e outras ferramentas colaborativas essenciais.",
+                "Nosso suporte contínuo garante que as soluções implementadas estejam otimizadas e alinhadas com as melhores práticas de segurança e eficiência operacional.",
+                "Além de melhorar a colaboração e a comunicação interna, nossa abordagem visa capacitar sua equipe com treinamentos e suporte técnico para maximizar o retorno sobre o investimento em tecnologia.",
+                "Estamos comprometidos em fornecer resultados tangíveis, medindo o impacto das mudanças implementadas e ajustando estratégias conforme necessário para atender às necessidades dinâmicas do seu negócio."
+            ]
+        },
+        "consulting": {
+            "title": "Consultoria Técnica",
+            "description": "Planeje a melhor rota para soluções de qualidade. Nossa equipe de especialistas analisa sua infraestrutura atual e propõe melhorias estratégicas para otimizar seus recursos tecnológicos.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Nossa consultoria em TI oferece uma análise completa e estratégica da infraestrutura tecnológica da sua empresa, identificando oportunidades de melhoria, redução de custos e aumento de produtividade.",
+                "Com uma equipe de especialistas altamente qualificados e experientes, realizamos um diagnóstico detalhado da sua atual estrutura de TI, avaliando hardware, software, redes, segurança, processos e pessoas.",
+                "A partir desse diagnóstico, desenvolvemos um plano estratégico personalizado alinhado aos objetivos de negócio da sua empresa, com recomendações claras e priorizadas para implementação.",
+                "Implementamos soluções que podem incluir desde a migração para a nuvem até a integração de ferramentas colaborativas, sempre alinhadas às melhores práticas do mercado.",
+                "Nosso compromisso é garantir que sua empresa aproveite ao máximo seus investimentos em tecnologia, melhorando a eficiência operacional e impulsionando o crescimento sustentável.",
+                "Além de estratégias de curto prazo, focamos em estabelecer uma base sólida para o futuro, capacitando sua equipe e assegurando que suas soluções tecnológicas estejam sempre alinhadas com as demandas do mercado."
+            ]
+        },
+        "infrastructure": {
+            "title": "Infraestrutura de TI",
+            "description": "Estrutura essencial para um crescimento sólido. Implementamos e gerenciamos toda a infraestrutura de TI da sua empresa, garantindo estabilidade, segurança e alto desempenho.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Nossa solução de infraestrutura de TI oferece uma base sólida e confiável para todas as operações tecnológicas da sua empresa, garantindo estabilidade, segurança e alto desempenho.",
+                "Projetamos, implementamos e gerenciamos toda a infraestrutura de TI, incluindo servidores, storage, backup, redes, sistemas operacionais e virtualização, adaptados às necessidades específicas do seu negócio.",
+                "Utilizamos as melhores práticas do mercado e tecnologias de ponta para criar uma infraestrutura robusta, escalável e preparada para o crescimento futuro da sua empresa.",
+                "Nossa equipe de especialistas certificados garante a implementação correta e o funcionamento contínuo de todos os componentes, minimizando riscos e maximizando o retorno sobre o investimento em tecnologia.",
+                "Além de implementar a infraestrutura, oferecemos suporte proativo e gerenciamento contínuo, assegurando que sua infraestrutura de TI opere com eficiência máxima e esteja sempre alinhada com os objetivos estratégicos da sua empresa."
+            ]
+        },
+        "security": {
+            "title": "Segurança da Informação",
+            "description": "Proteja seus dados e sistemas contra ameaças digitais. Oferecemos soluções completas de segurança, incluindo firewall, antivírus, backup, criptografia e treinamento de usuários.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Nossa solução de Segurança da Informação oferece proteção abrangente para os dados e sistemas da sua empresa, defendendo-os contra as mais diversas ameaças digitais do cenário atual.",
+                "Implementamos múltiplas camadas de segurança, incluindo firewall, antivírus, anti-malware, detecção de intrusão, prevenção de perda de dados e muito mais, criando uma defesa robusta contra ataques cibernéticos.",
+                "Além das soluções tecnológicas, oferecemos políticas de segurança, treinamento de usuários e auditorias periódicas para garantir que todos os aspectos da segurança da informação sejam cobertos.",
+                "Nossa abordagem é proativa, identificando e mitigando vulnerabilidades antes que possam ser exploradas, e mantendo todos os sistemas de segurança atualizados contra as mais recentes ameaças.",
+                "Com foco na conformidade com normas e regulamentos de segurança, nossa equipe assegura que sua empresa esteja sempre protegida e em conformidade com os padrões exigidos pelo mercado e pela legislação."
+            ]
+        },
+        "cloud": {
+            "title": "Cloud Computing",
+            "description": "Migre seus sistemas para a nuvem e ganhe flexibilidade, escalabilidade e redução de custos. Somos especialistas em soluções Microsoft Azure.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Nossa solução de Cloud Computing oferece a migração e gerenciamento de seus sistemas e dados para a nuvem, proporcionando maior flexibilidade, escalabilidade e redução de custos operacionais.",
+                "Trabalhamos com os principais provedores de nuvem do mercado, como Microsoft Azure, AWS e Google Cloud, para oferecer a melhor solução de acordo com as necessidades específicas da sua empresa.",
+                "Desenvolvemos uma estratégia de migração personalizada, minimizando riscos e interrupções, e garantindo que seus sistemas funcionem perfeitamente no ambiente de nuvem.",
+                "Após a migração, oferecemos serviços de gerenciamento contínuo, otimização de custos, monitoramento de desempenho e segurança para garantir que você obtenha o máximo valor do seu investimento em nuvem.",
+                "Com nossa expertise em Microsoft Azure, oferecemos integrações avançadas, implementação de serviços gerenciados e suporte especializado para que sua empresa aproveite ao máximo os recursos da plataforma."
+            ]
+        },
+        "networking": {
+            "title": "Redes e Conectividade",
+            "description": "Projetos e implementação de redes estruturadas, wireless, VPN, SD-WAN e soluções de conectividade para garantir a comunicação eficiente entre seus sistemas e colaboradores.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Nossa solução de Redes e Conectividade oferece o projeto, implementação e gerenciamento de toda a infraestrutura de comunicação da sua empresa, garantindo conexões rápidas, estáveis e seguras.",
+                "Desenvolvemos projetos de redes estruturadas, wireless, VPN, SD-WAN e outras soluções de conectividade adaptadas às necessidades específicas do seu negócio e ambiente físico.",
+                "Utilizamos equipamentos de alta qualidade e seguimos as melhores práticas do mercado para criar uma infraestrutura de rede robusta, escalável e preparada para as demandas atuais e futuras.",
+                "Além da implementação, oferecemos serviços de monitoramento, manutenção e otimização contínua para garantir o máximo desempenho e disponibilidade da sua rede.",
+                "Nossa abordagem inclui análise proativa de performance, identificação e resolução de problemas antes que impactem seus serviços, garantindo a continuidade operacional e a satisfação dos usuários."
+            ]
+        },
+        "support": {
+            "title": "Suporte Técnico",
+            "description": "Suporte técnico especializado e proativo, com atendimento remoto e presencial, para resolver problemas rapidamente e minimizar o impacto em suas operações.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Nossa solução de Suporte Técnico oferece atendimento especializado e proativo para resolver problemas rapidamente, garantindo a continuidade operacional da sua empresa.",
+                "Com serviços de suporte remoto e presencial, nossa equipe está disponível para resolver incidentes de forma eficiente, minimizando o impacto nas suas operações diárias.",
+                "Além do suporte reativo, também oferecemos monitoramento proativo e manutenção preventiva para identificar e resolver problemas antes que afetem seu ambiente tecnológico.",
+                "Nossa abordagem visa não apenas resolver problemas, mas também otimizar a performance dos seus sistemas e garantir a satisfação contínua dos usuários finais."
+            ]
+        },
+        "virtualization": {
+            "title": "Virtualização",
+            "description": "Otimize seus recursos de hardware com soluções de virtualização de servidores, desktops e aplicações, aumentando a eficiência e reduzindo custos operacionais.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Nossa solução de Virtualização oferece a otimização de recursos de hardware através da virtualização de servidores, desktops e aplicações, proporcionando maior eficiência operacional e redução de custos.",
+                "Desenvolvemos projetos personalizados de virtualização, adaptados às necessidades específicas do seu negócio, para maximizar o uso de recursos existentes e simplificar a gestão de ambientes complexos.",
+                "Utilizamos tecnologias líderes de mercado e melhores práticas para implementar soluções de virtualização que garantem escalabilidade, segurança e alta disponibilidade para suas operações.",
+                "Além da implementação inicial, oferecemos serviços contínuos de monitoramento, manutenção e otimização para garantir que seus ambientes virtualizados estejam sempre operando com máximo desempenho."
+            ]
+        },
+        "structured-cabling": {
+            "title": "Cabeamento Estruturado",
+            "description": "Projetos e execução de cabeamento estruturado para ambientes corporativos e datacenters, garantindo desempenho, organização e escalabilidade.",
+            "shortDescription": "Infraestrutura de cabeamento para datacenters, certificação e garantia de performance.",
+            "fullDescription": [
+                "Oferecemos soluções completas de cabeamento estruturado para ambientes corporativos e datacenters, desde o projeto até a execução, seguindo as melhores práticas do mercado e normas internacionais.",
+                "Nosso serviço garante organização, facilidade de manutenção, escalabilidade e alta performance para sua infraestrutura de TI.",
+                "Utilizamos materiais de alta qualidade e mão de obra especializada para assegurar a durabilidade e eficiência do sistema de cabeamento.",
+                "Realizamos a certificação de todos os pontos de rede utilizando o equipamento LanTEK-IV, garantindo que o cabeamento atenda aos padrões exigidos para transmissão de dados em alta velocidade e máxima confiabilidade.",
+                "A certificação com o LanTEK-IV assegura que sua rede está pronta para suportar aplicações críticas e futuras expansões, proporcionando tranquilidade e segurança para o seu negócio."
+            ]
+        },
+        "project-management": {
+            "title": "Gerenciamento de Projetos",
+            "description": "Eleve o desempenho da sua empresa com nossa consultoria em Gerenciamento de Projetos baseada nas diretrizes do PMBOK. Estruturamos, implementamos e otimizamos processos de gerenciamento de projetos para garantir eficiência, controle e entrega dos resultados esperados.",
+            "shortDescription": "Gerenciamento de Projetos Profissional baseado no PMBOK para garantir controle, organização e entrega bem-sucedida dos seus projetos.",
+            "fullDescription": [
+                "Nossa consultoria em Gerenciamento de Projetos é fundamentada nas melhores práticas do guia PMBOK, garantindo uma abordagem estruturada, escalável e eficiente para gerenciar projetos de qualquer complexidade.",
+                "Realizamos um diagnóstico detalhado da maturidade atual de gerenciamento de projetos da sua empresa, identificando lacunas, riscos e oportunidades de melhoria.",
+                "Com base nessa análise, implementamos um modelo de governança sob medida com papéis, responsabilidades, processos e ferramentas claramente definidos, alinhados aos objetivos de negócios da sua empresa.",
+                "Nosso serviço inclui a implementação dos principais grupos de processos do PMBOK: Iniciação, Planejamento, Execução, Monitoramento e Controle, e Encerramento.",
+                "Fornecemos suporte prático na definição do escopo do projeto, gerenciamento de tempo, controle de custos, garantia de qualidade, gerenciamento de riscos, comunicações, aquisições e engajamento das partes interessadas.",
+                "Nossa equipe aplica metodologias ágeis ou tradicionais, dependendo do perfil da sua empresa, garantindo flexibilidade sem perder o controle e a rastreabilidade.",
+                "Além da implementação de processos, oferecemos mentoria e treinamento para suas equipes, capacitando-as a manter e evoluir as práticas de gerenciamento de projetos ao longo do tempo.",
+                "O resultado é um ambiente de projeto consistente, previsível e transparente, reduzindo falhas, otimizando recursos e entregando maior valor à sua organização."
+            ]
+        }
+    },
+    "testimonials": {
+        "1": {
+            "title": "Atualização de infraestrutura tecnológica",
+            "position": "Instituição educacional",
+            "testimonial": "Focada em avanços com tecnologias Microsoft. Inclui otimização de virtualização, gestão via System Center, suporte ao Active Directory, Remote Desktop Services e SQL Server 2012."
+        },
+        "2": {
+            "title": "Reformulação da estrutura de emails e comunicação",
+            "position": "Empresa do segmento aéreo",
+            "testimonial": "Implantação do Office365 em diferentes Tenants, Sharepoint para compartilhamento de arquivos, e Skype for Business para reuniões com áudio, videoconferência e compartilhamento de documentos, visando otimização e redução de custos."
+        },
+        "3": {
+            "title": "Certificação, Conectorização e cobertura WiFi",
+            "position": "Institutos de Educação Orofacial",
+            "testimonial": "Implementamos rede cabeada e WiFi UniFI U6 em filias no Brasil, garantido alta perfomance, baixa latência e cobertura eficiente. Certificação, conectorização conformidade técnica e operação estável."
+        },
+        "4": {
+            "title": "Migração de Datacenter e Infraestrutura de Rede",
+            "position": "Empresa do Setor Sucroenergético",
+            "testimonial": "Realizamos o Datacenter Migration com montagem de racks, passagem e certificação de cabos, fusão de fibra óptica e montagem de DIOs com alta precisão técnica.",
+            "fullDescription": [
+                "Realizamos a migração completa de um datacenter corporativo, com acompanhamento técnico desde o início da obra até a entrega final do ambiente em pleno funcionamento. O projeto envolveu a movimentação física de racks existentes, montagem de novos racks, organização e passagem de cabeamento estruturado (cobre e fibra óptica), além da montagem e organização de DIOs (Distribuidores Internos Ópticos).",
+                "A certificação dos pontos de rede foi feita com equipamentos profissionais, assegurando conformidade com os padrões técnicos e garantindo a confiabilidade da infraestrutura. A fusão de fibras ópticas foi executada com precisão, utilizando equipamentos de alta tecnologia para assegurar baixíssima perda e alta performance na transmissão de dados.",
+                "Todo o ambiente foi planejado para oferecer escalabilidade, segurança e eficiência energética, com foco na continuidade operacional e facilidade de manutenção. A organização dos cabos e a montagem dos racks seguiram as melhores práticas do mercado, resultando em um datacenter limpo, funcional e preparado para futuras expansões."
+            ]
+        },
+        "5": {
+            "title": "Padronização e Certificação de Infraestrutura de Rede com Cabeamento Estruturado",
+            "position": "Empresas de Pequeno, Médio e Grande Porte",
+            "testimonial": "Projeto de infraestrutura de rede com foco em cabeamento estruturado, organização física, mapeamento lógico e certificação técnica utilizando equipamentos Lantek-IVS. A solução foi desenvolvida para garantir desempenho, padronização e escalabilidade da rede corporativa.",
+            "fullDescription": [
+                "Este projeto foi desenvolvido para atender empresas de diferentes portes, com o objetivo de estruturar e otimizar a infraestrutura de rede local. A execução envolveu: ",
+                "Cabeamento estruturado completo, com instalação de cabos de rede (cobre e/ou fibra óptica) conforme normas técnicas e padrões internacionais.",
+                "Organização física dos pontos de rede, com identificação clara e padronizada de racks, patch panels e pontos de acesso.",
+                "Mapeamento lógico da rede, documentando conexões, topologia e dispositivos ativos, facilitando futuras manutenções e expansões.",
+                "Certificação técnica de todos os pontos de rede, utilizando equipamentos Lantek-IVS, assegurando conformidade com os requisitos de desempenho e qualidade.",
+                "Padronização visual e funcional, promovendo um ambiente limpo, seguro e eficiente, com foco na continuidade operacional e redução de falhas. ",
+                "O projeto foi planejado para oferecer escalabilidade, confiabilidade e facilidade de gestão, sendo ideal para ambientes corporativos que demandam alta disponibilidade e organização da infraestrutura de TI. "
+            ]
+        },
+        "6": {
+            "title": "Certificação, Conectorização e cobertura WiFi",
+            "position": "Institutos de Educação Orofacial",
+            "testimonial": "Implementamos rede cabeada e WiFi UniFi U6 em filiais no Brasil, garantido alta performance, baixa latência e cobertura eficiente. Certificação, conectorização conformidade técnica e operação estável.",
+            "fullDescription": [
+                "Implementamos uma infraestrutura de rede cabeada e Wi-Fi de alta performance utilizando Access Points UniFi U6 em diversas filiais espalhadas pelo território nacional, incluindo Teresina, Maringá, Ribeirão Preto e Maranhão. O projeto foi cuidadosamente planejado e executado para garantir baixa latência, alta disponibilidade e cobertura eficiente em todos os ambientes.",
+                "Todos os pontos de rede foram certificados com o equipamento profissional Lantek IVS, assegurando conformidade com os padrões técnicos exigidos e garantindo uma operação estável e segura. A conectorização foi realizada com precisão, utilizando materiais de alta qualidade para assegurar durabilidade e desempenho.",
+                "Os Access Points UniFi U6 se destacam não apenas pela performance, mas também pelo design discreto e moderno, que se integra perfeitamente ao ambiente corporativo, mantendo a estética dos espaços sem comprometer a eficiência da rede."
+            ]
+        }
+    },
+    "pageServices": {
+        "home": "Home",
+        "services": "Serviços",
+        "service-not-found": "Serviço não encontrado",
+        "back-to-services": "Voltar para Serviços",
+        "back-to-home": "Voltar para Home",
+        "request-quote": "Solicitar Orçamento",
+        "talk-to-specialist": "Falar com um Especialista",
+        "our-services": "Nossos Serviços",
+        "need-help": "Precisa de ajuda?",
+        "contact-us": "Entre em contato com nossa equipe para tirar dúvidas ou solicitar um orçamento personalizado.",
+        "request-contact": "Solicitar Contato",
+        "overview": "Visão Geral"
+    },
+    "privacyPolicy": {
+        "title": "Política de Privacidade",
+        "intro": "Esta Política de Privacidade descreve como suas informações pessoais são coletadas, usadas e compartilhadas quando você visita ou utiliza nosso site, em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018).",
+        "collection": {
+            "title": "Coleta e Uso de Informações",
+            "text": "Coletamos informações pessoais fornecidas voluntariamente por você, como nome, e-mail e outras informações de contato, para melhorar sua experiência em nosso site. Utilizamos esses dados apenas para os fins descritos nesta política."
+        },
+        "legalBasis": {
+            "title": "Base Legal para Tratamento de Dados",
+            "intro": "O tratamento de dados pessoais realizado neste site está em conformidade com a LGPD. Conforme o Art. 7º da Lei, o tratamento de dados pessoais somente poderá ser realizado nas seguintes hipóteses:",
+            "items": [
+                "Mediante o fornecimento de consentimento pelo titular",
+                "Para o cumprimento de obrigação legal ou regulatória pelo controlador",
+                "Quando necessário para a execução de contrato ou de procedimentos preliminares relacionados a contrato do qual seja parte o titular",
+                "Quando necessário para atender aos interesses legítimos do controlador ou de terceiro"
+            ]
+        },
+        "cookies": {
+            "title": "Cookies",
+            "text": "Nosso site pode utilizar cookies para personalizar sua navegação e analisar o tráfego. Você pode optar por desabilitar os cookies nas configurações do seu navegador, mas isso pode afetar algumas funcionalidades do site."
+        },
+        "sharing": {
+            "title": "Compartilhamento de Dados",
+            "text": "Não compartilhamos suas informações pessoais com terceiros, exceto quando exigido por lei ou para proteger nossos direitos."
+        },
+        "security": {
+            "title": "Segurança",
+            "text": "Adotamos medidas de segurança para proteger suas informações pessoais contra acesso não autorizado, alteração, divulgação ou destruição."
+        },
+        "rights": {
+            "title": "Direitos do Titular dos Dados",
+            "intro": "De acordo com o Art. 18 da LGPD, o titular dos dados pessoais tem direito a obter do controlador, em relação aos dados por ele tratados, a qualquer momento e mediante requisição:",
+            "items": [
+                "Confirmação da existência de tratamento",
+                "Acesso aos dados",
+                "Correção de dados incompletos, inexatos ou desatualizados",
+                "Anonimização, bloqueio ou eliminação de dados desnecessários",
+                "Portabilidade dos dados a outro fornecedor",
+                "Eliminação dos dados pessoais tratados com consentimento",
+                "Informação sobre compartilhamento de dados",
+                "Informação sobre o não fornecimento de consentimento",
+                "Revogação do consentimento"
+            ]
+        },
+        "changes": {
+            "title": "Alterações nesta Política",
+            "text": "Podemos atualizar esta Política de Privacidade periodicamente. Recomendamos que você revise esta página regularmente para estar ciente de quaisquer alterações."
+        },
+        "contact": {
+            "title": "Contato para Exercício de Direitos",
+            "text": "Para exercer seus direitos previstos na LGPD, entre em contato pelo e-mail."
+        }
+    }
+}

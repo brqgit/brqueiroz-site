@@ -1,0 +1,336 @@
+{
+    "navbar": {
+        "about-us": "ABOUT US",
+        "services": "SERVICES",
+        "cases": "CASES",
+        "contact": "CONTACT"
+    },
+    "header": {
+        "h2": "THE TECHNOLOGY YOUR COMPANY NEEDS TO",
+        "h1": "REACH THE <0>NEXT LEVEL</0>",
+        "h4": "For a company to grow strong and solid, invest in the best available"
+    },
+    "footer": {
+        "description": "Information technology solutions for over 20 years, bringing the best to all of Latin America.",
+        "services": "Services",
+        "quick-links": "Quick Links",
+        "contact": "Contact",
+        "copyright": "BRQueiroz. All rights reserved."
+    },
+    "home": {
+        "about": {
+            "p1": "BRQueiroz was conceived based on the constant growth that the digital world has had, which generates the need for objective and reliable solutions in the structuring and growth of a company.",
+            "p2": "Now with over 20 years in the market, BRQueiroz proves to be a solid and reliable company, bringing quality solutions to its clients. Our team is made up of highly qualified professionals certified in the main technologies in the market.",
+            "p3": "Our commitment is to offer personalized solutions that meet the specific needs of each client, ensuring maximum efficiency and security in all projects. We work with the best practices in the market and are always updated with the latest technological trends.",
+            "p4": "We serve companies of all sizes and segments, from small businesses to large corporations, always with the same level of excellence and dedication. Our mission is to be a strategic partner for our clients, helping them achieve their business objectives through technology."
+        }
+    },
+    "about-us": "<0>ABOUT</0> <1>US</1>",
+    "about": {
+        "h1": "<0>ABOUT</0> <1>US</1>",
+        "cio-title": "Chief Information Officer (CIO)",
+        "ceo-founder-title": "CEO & Founder | BRQueiroz",
+        "p1": "BRQueiroz was conceived based on the constant growth of the digital world, which generates the need for objective and reliable solutions in the structuring and growth of a company.",
+        "p2": "Now, with more than 20 years in the market, BRQueiroz stands out as a reference in information technology solutions, bringing the best IT solutions to Ribeirão Preto and the surrounding region.",
+        "values": [
+            {
+                "name": "Reliability",
+                "desc": "Commitment to reliable solutions"
+            },
+            {
+                "name": "Experience",
+                "desc": "Over 20 years in the IT market"
+            },
+            {
+                "name": "Engagement",
+                "desc": "Commitment to each project"
+            },
+            {
+                "name": "Security",
+                "desc": "Data and infrastructure protection"
+            }
+        ],
+        "h2": "<0>VALUES THAT</0><1></1><2>GUIDE US</2>",
+        "p3": " At BRQueiroz, our values are the pillars that support all our operations and relationships. They reflect who we are and how we work to offer the best solutions in information technology.",
+        "h2-partners": "<0>OUR</0> <1>PARTNERS</1>",
+        "p4": " We work with the best technology companies in the world to offer high-quality solutions to our clients.",
+        "ready-elevate-technologies": "Ready to elevate your technology?",
+        "p5": "Contact us and find out how we can help your company reach the next level with our technology solutions."
+    },
+    "our-services": "<0>OUR</0> <1>SERVICES</1>",
+    "our-services-description": "We offer a wide range of information technology services to meet the specific needs of your company. Discover our solutions:",
+    "cases-success": "<0>SUCCESS</0> <1>STORIES</1>",
+    "cases-success-description": "Discover some of our success stories and see what our clients have to say about our services.",
+    "talk-to-us": "Talk to us",
+    "contact-us": "Contact us",
+    "years-of-experience": "Years of Experience",
+    "clients-served": "Clients Served",
+    "projects-completed": "Projects Completed",
+    "satisfaction-guaranteed": "Satisfaction Guaranteed",
+    "learn-more": "Learn more",
+    "read-more": "Read more",
+    "articles": {
+        "1": {
+            "title": "The Invisible Force Behind Your Company's Technology",
+            "description": "The integrity of IT and automation infrastructure is essential for operational stability.",
+            "content": "BRQueiroz offers high-precision optical inspection to ensure the integrity of IT and industrial automation infrastructure, preventing invisible failures and increasing process reliability.",
+            "alt": "Image representing invisible technology"
+        },
+        "2": {
+            "title": "BRQueiroz Begins a New Era with LanTEK IV-S",
+            "description": "Innovation and cutting-edge technology for data network certification.",
+            "content": "BRQueiroz initiates the Trade-In process to acquire the LanTEK IV-S from TREND Networks, the most advanced equipment for copper and fiber optic data network certification, maintaining its commitment to high-quality data transmission.",
+            "alt": "Image of LanTEK IV-S"
+        },
+        "3": {
+            "title": "BRQueiroz: Technology for Sugar and Alcohol Plants",
+            "description": "Technological solutions to increase productivity and operational safety in plants.",
+            "content": "BRQueiroz provides technological solutions for sugar and alcohol plants, featuring cutting-edge infrastructure, 24/7 monitoring, robust digital security, and specialized support. We ensure efficiency, productivity, and safety for your operation.",
+            "alt": "Image representing sugar and alcohol plants"
+        }
+    },
+    "services": {
+        "microsoft-365": {
+            "title": "Microsoft 365",
+            "description": "Transform your company with our Microsoft 365 consulting. We analyze your infrastructure, implement customized solutions, and optimize processes, collaborating to increase productivity and efficiency.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Microsoft 365 consulting provides a comprehensive and strategic analysis of your company's technological infrastructure, highlighting areas for improvement, cost reduction, and increased productivity.",
+                "With a team of highly qualified specialists, we carry out a detailed diagnosis of your current IT structure, including hardware, software, networks, security, processes, and people.",
+                "Based on this diagnosis, we develop a personalized strategic plan aligned with your company's business objectives, with clear and prioritized recommendations for implementation.",
+                "We implement Microsoft 365 solutions that may include configuration and integration of applications such as Microsoft Teams, SharePoint, Exchange Online, and other essential collaborative tools.",
+                "Our ongoing support ensures that the implemented solutions are optimized and aligned with best practices in security and operational efficiency.",
+                "In addition to improving internal collaboration and communication, our approach aims to empower your team with training and technical support to maximize the return on your technology investment.",
+                "We are committed to delivering tangible results, measuring the impact of implemented changes, and adjusting strategies as needed to meet your business's dynamic needs."
+            ]
+        },
+        "consulting": {
+            "title": "Technical Consulting",
+            "description": "Plan the best route for quality solutions. Our team of specialists analyzes your current infrastructure and proposes strategic improvements to optimize your technological resources.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our IT consulting offers a complete and strategic analysis of your company's technological infrastructure, identifying opportunities for improvement, cost reduction, and increased productivity.",
+                "With a team of highly qualified and experienced specialists, we carry out a detailed diagnosis of your current IT structure, evaluating hardware, software, networks, security, processes, and people.",
+                "Based on this diagnosis, we develop a personalized strategic plan aligned with your company's business objectives, with clear and prioritized recommendations for implementation.",
+                "We implement solutions that may include everything from cloud migration to the integration of collaborative tools, always aligned with market best practices.",
+                "Our commitment is to ensure that your company makes the most of its technology investments, improving operational efficiency and driving sustainable growth.",
+                "In addition to short-term strategies, we focus on establishing a solid foundation for the future, empowering your team and ensuring that your technological solutions are always aligned with market demands."
+            ]
+        },
+        "infrastructure": {
+            "title": "IT Infrastructure",
+            "description": "Essential structure for solid growth. We implement and manage your company's entire IT infrastructure, ensuring stability, security, and high performance.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our IT infrastructure solution offers a solid and reliable foundation for all your company's technological operations, ensuring stability, security, and high performance.",
+                "We design, implement, and manage the entire IT infrastructure, including servers, storage, backup, networks, operating systems, and virtualization, tailored to your business's specific needs.",
+                "We use market best practices and cutting-edge technologies to create a robust, scalable infrastructure prepared for your company's future growth.",
+                "Our team of certified specialists ensures the correct implementation and continuous operation of all components, minimizing risks and maximizing the return on your technology investment.",
+                "In addition to implementing the infrastructure, we offer proactive support and continuous management, ensuring that your IT infrastructure operates at maximum efficiency and is always aligned with your company's strategic objectives."
+            ]
+        },
+        "security": {
+            "title": "Information Security",
+            "description": "Protect your data and systems against digital threats. We offer complete security solutions, including firewall, antivirus, backup, encryption, and user training.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Information Security solution offers comprehensive protection for your company's data and systems, defending them against the most diverse digital threats in today's landscape.",
+                "We implement multiple layers of security, including firewall, antivirus, anti-malware, intrusion detection, data loss prevention, and more, creating a robust defense against cyberattacks.",
+                "In addition to technological solutions, we offer security policies, user training, and periodic audits to ensure that all aspects of information security are covered.",
+                "Our approach is proactive, identifying and mitigating vulnerabilities before they can be exploited, and keeping all security systems updated against the latest threats.",
+                "Focusing on compliance with security standards and regulations, our team ensures that your company is always protected and compliant with market and legal requirements."
+            ]
+        },
+        "cloud": {
+            "title": "Cloud Computing",
+            "description": "Migrate your systems to the cloud and gain flexibility, scalability, and cost reduction. We are specialists in Microsoft Azure solutions.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Cloud Computing solution offers migration and management of your systems and data to the cloud, providing greater flexibility, scalability, and reduction of operational costs.",
+                "We work with the main cloud providers in the market, such as Microsoft Azure, AWS, and Google Cloud, to offer the best solution according to your company's specific needs.",
+                "We develop a personalized migration strategy, minimizing risks and interruptions, and ensuring that your systems work perfectly in the cloud environment.",
+                "After migration, we offer continuous management services, cost optimization, performance monitoring, and security to ensure you get the most value from your cloud investment.",
+                "With our expertise in Microsoft Azure, we offer advanced integrations, implementation of managed services, and specialized support so your company can make the most of the platform's resources."
+            ]
+        },
+        "networking": {
+            "title": "Networking and Connectivity",
+            "description": "Design and implementation of structured networks, wireless, VPN, SD-WAN, and connectivity solutions to ensure efficient communication between your systems and employees.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Networking and Connectivity solution offers the design, implementation, and management of your company's entire communication infrastructure, ensuring fast, stable, and secure connections.",
+                "We develop projects for structured networks, wireless, VPN, SD-WAN, and other connectivity solutions tailored to the specific needs of your business and physical environment.",
+                "We use high-quality equipment and follow market best practices to create a robust, scalable network infrastructure prepared for current and future demands.",
+                "In addition to implementation, we offer monitoring, maintenance, and continuous optimization services to ensure maximum performance and availability of your network.",
+                "Our approach includes proactive performance analysis, identification, and resolution of problems before they impact your services, ensuring operational continuity and user satisfaction."
+            ]
+        },
+        "support": {
+            "title": "Technical Support",
+            "description": "Specialized and proactive technical support, with remote and on-site service, to quickly solve problems and minimize the impact on your operations.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Technical Support solution offers specialized and proactive service to quickly solve problems, ensuring your company's operational continuity.",
+                "With remote and on-site support services, our team is available to efficiently resolve incidents, minimizing the impact on your daily operations.",
+                "In addition to reactive support, we also offer proactive monitoring and preventive maintenance to identify and resolve problems before they affect your technological environment.",
+                "Our approach aims not only to solve problems but also to optimize the performance of your systems and ensure the continuous satisfaction of end users."
+            ]
+        },
+        "virtualization": {
+            "title": "Virtualization",
+            "description": "Optimize your hardware resources with server, desktop, and application virtualization solutions, increasing efficiency and reducing operational costs.",
+            "shortDescription": "",
+            "fullDescription": [
+                "Our Virtualization solution offers hardware resource optimization through server, desktop, and application virtualization, providing greater operational efficiency and cost reduction.",
+                "We develop personalized virtualization projects, tailored to your business's specific needs, to maximize the use of existing resources and simplify the management of complex environments.",
+                "We use leading market technologies and best practices to implement virtualization solutions that ensure scalability, security, and high availability for your operations.",
+                "In addition to the initial implementation, we offer continuous monitoring, maintenance, and optimization services to ensure that your virtualized environments are always operating at maximum performance."
+            ]
+        },
+        "structured-cabling": {
+            "title": "Structured Cabling",
+            "description": "Design and execution of structured cabling for corporate environments and data centers, ensuring performance, organization, and scalability.",
+            "shortDescription": "Cabling infrastructure for data centers, certification, and performance guarantee.",
+            "fullDescription": [
+                "We offer complete structured cabling solutions for corporate environments and data centers, from design to execution, following market best practices and international standards.",
+                "Our service ensures organization, ease of maintenance, scalability, and high performance for your IT infrastructure.",
+                "We use high-quality materials and specialized labor to ensure the durability and efficiency of the cabling system.",
+                "We certify all network points using the LanTEK-IV equipment, ensuring that the cabling meets the required standards for high-speed data transmission and maximum reliability.",
+                "Certification with LanTEK-IV ensures that your network is ready to support critical applications and future expansions, providing peace of mind and security for your business."
+            ]
+        },
+        "project-management": {
+            "title": "Project Management",
+            "description": "Elevate your company's performance with our Project Management consultancy based on PMBOK guidelines. We structure, implement, and optimize project management processes to ensure efficiency, control, and delivery of expected results.",
+            "shortDescription": "Professional Project Management based on PMBOK to ensure control, organization, and successful delivery of your projects.",
+            "fullDescription": [
+                "Our Project Management consulting is grounded in the best practices of the PMBOK guide, ensuring a structured, scalable, and efficient approach to managing projects of any complexity.",
+                "We perform a detailed diagnosis of your company's current project management maturity, identifying gaps, risks, and improvement opportunities.",
+                "Based on this analysis, we implement a tailored governance model with clear roles, responsibilities, processes, and tools aligned with your business objectives.",
+                "Our service includes the implementation of key PMBOK process groups: Initiating, Planning, Executing, Monitoring and Controlling, and Closing.",
+                "We provide hands-on support in defining project scope, time management, cost control, quality assurance, risk management, communications, procurement, and stakeholder engagement.",
+                "Our team applies agile or traditional methodologies, depending on your company’s profile, ensuring flexibility without losing control and traceability.",
+                "In addition to process implementation, we offer mentoring and training for your teams, empowering them to maintain and evolve the project management practices over time.",
+                "The result is a consistent, predictable, and transparent project environment, reducing failures, optimizing resources, and delivering greater value to your organization."
+            ]
+        }
+    },
+    "testimonials": {
+        "1": {
+            "title": "Technological Infrastructure Upgrade",
+            "position": "Educational Institution",
+            "testimonial": "Focused on advancements with Microsoft technologies. Includes virtualization optimization, management via System Center, support for Active Directory, Remote Desktop Services, and SQL Server 2012."
+        },
+        "2": {
+            "title": "Email and Communication Structure Overhaul",
+            "position": "Aviation Sector Company",
+            "testimonial": "Implementation of Office365 in different tenants, SharePoint for file sharing, and Skype for Business for meetings with audio, videoconferencing, and document sharing, aiming for optimization and cost reduction."
+        },
+        "3": {
+            "title": "Certification, Connectorization, and WiFi Coverage",
+            "position": "Orofacial Education Institutes",
+            "testimonial": "We implemented wired and UniFI U6 WiFi networks in branches across Brazil, ensuring high performance, low latency, and efficient coverage. Certification, connectorization, technical compliance, and stable operation."
+        },
+        "4": {
+            "title": "Data Center Migration and Network Infrastructure",
+            "position": "Sugar and Energy Sector Company",
+            "testimonial": "We performed the Data Center Migration with rack assembly, cable routing and certification, fiber optic fusion, and DIO assembly with high technical precision.",
+            "fullDescription": [
+                "We performed a complete corporate data center migration, with technical monitoring from the beginning of construction until the final delivery of the fully functioning environment. The project involved physical relocation of existing racks, assembly of new racks, organization and routing of structured cabling (copper and fiber optic), as well as assembly and organization of ODFs (Optical Distribution Frames).",
+                "Network point certification was performed with professional equipment, ensuring compliance with technical standards and guaranteeing infrastructure reliability. Fiber optic fusion was executed with precision, using high-technology equipment to ensure extremely low loss and high performance in data transmission.",
+                "The entire environment was planned to offer scalability, security, and energy efficiency, focusing on operational continuity and ease of maintenance. Cable organization and rack assembly followed market best practices, resulting in a clean, functional data center prepared for future expansions."
+            ]
+        },
+        "5": {
+            "title": "Network Infrastructure Standardization and Certification with Structured Cabling",
+            "position": "Small, Medium and Large Companies",
+            "testimonial": "Network infrastructure project focused on structured cabling, physical organization, logical mapping, and technical certification using Lantek-IVS equipment. The solution was developed to ensure performance, standardization, and scalability of the corporate network.",
+            "fullDescription": [
+                "This project was developed to serve companies of different sizes, with the goal of structuring and optimizing local network infrastructure. The execution involved: ",
+                "Complete structured cabling, with installation of network cables (copper and/or fiber optic) according to technical standards and international protocols.",
+                "Physical organization of network points, with clear and standardized identification of racks, patch panels, and access points.",
+                "Logical network mapping, documenting connections, topology, and active devices, facilitating future maintenance and expansions.",
+                "Technical certification of all network points using Lantek-IVS equipment, ensuring compliance with performance and quality requirements.",
+                "Visual and functional standardization, promoting a clean, safe, and efficient environment, focused on operational continuity and fault reduction.",
+                "The project was planned to offer scalability, reliability, and ease of management, ideal for corporate environments that demand high availability and organized IT infrastructure."
+            ]
+        },
+        "6": {
+            "title": "Certification, Connectorization, and WiFi Coverage",
+            "position": "Orofacial Education Institutes",
+            "testimonial": "We implemented wired and WiFi UniFi U6 networks in branches across Brazil, ensuring high performance, low latency, and efficient coverage. Certification, connectorization, technical compliance, and stable operation.",
+            "fullDescription": [
+                "We implemented a high-performance wired and Wi-Fi network infrastructure using UniFi U6 Access Points in various branches across the country, including Teresina, Maringá, Ribeirão Preto, and Maranhão. The project was carefully planned and executed to ensure low latency, high availability, and efficient coverage in all environments.",
+                "All network points were certified with professional Lantek IVS equipment, ensuring compliance with the required technical standards and guaranteeing stable and secure operation. Connectorization was performed with precision, using high-quality materials to ensure durability and performance.",
+                "The UniFi U6 Access Points stand out not only for their performance but also for their discreet and modern design, which integrates seamlessly into the corporate environment, maintaining the aesthetics of the spaces without compromising network efficiency."
+            ]
+        }
+    },
+    "pageServices": {
+        "home": "Home",
+        "services": "Services",
+        "service-not-found": "Service not found",
+        "back-to-services": "Back to Services",
+        "back-to-home": "Back to Home",
+        "request-quote": "Request a Quote",
+        "talk-to-specialist": "Talk to a Specialist",
+        "our-services": "Our Services",
+        "need-help": "Need help?",
+        "contact-us": "Contact our team to ask questions or request a personalized quote.",
+        "request-contact": "Request Contact",
+        "overview": "Overview"
+    },
+    "privacyPolicy": {
+        "title": "Privacy Policy",
+        "intro": "This Privacy Policy describes how your personal information is collected, used, and shared when you visit or use our website, in compliance with the Brazilian General Data Protection Law (LGPD - Law No. 13,709/2018).",
+        "collection": {
+            "title": "Information Collection and Use",
+            "text": "We collect personal information voluntarily provided by you, such as name, email, and other contact information, to improve your experience on our website. We use this data only for the purposes described in this policy."
+        },
+        "legalBasis": {
+            "title": "Legal Basis for Data Processing",
+            "intro": "The processing of personal data carried out on this website complies with LGPD. According to Art. 7 of the Law, personal data processing may only be carried out in the following cases:",
+            "items": [
+                "With consent from the data subject",
+                "To comply with legal or regulatory obligation",
+                "When necessary for the execution of a contract or preliminary procedures related to a contract",
+                "When necessary to serve the legitimate interests of the controller or third party"
+            ]
+        },
+        "cookies": {
+            "title": "Cookies",
+            "text": "Our website may use cookies to customize your browsing experience and analyze traffic. You can choose to disable cookies in your browser settings, but this may affect some website functionalities."
+        },
+        "sharing": {
+            "title": "Data Sharing",
+            "text": "We do not share your personal information with third parties, except when required by law or to protect our rights."
+        },
+        "security": {
+            "title": "Security",
+            "text": "We adopt security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction."
+        },
+        "rights": {
+            "title": "Data Subject Rights",
+            "intro": "According to Art. 18 of LGPD, the data subject has the right to obtain from the controller, in relation to their processed data, at any time and upon request:",
+            "items": [
+                "Confirmation of processing existence",
+                "Access to data",
+                "Correction of incomplete, inaccurate or outdated data",
+                "Anonymization, blocking or elimination of unnecessary data",
+                "Data portability to another service provider",
+                "Deletion of personal data processed with consent",
+                "Information about data sharing",
+                "Information about the possibility of not providing consent",
+                "Revocation of consent"
+            ]
+        },
+        "changes": {
+            "title": "Changes to This Policy",
+            "text": "We may update this Privacy Policy periodically. We recommend that you review this page regularly to stay aware of any changes."
+        },
+        "contact": {
+            "title": "Contact for Rights Exercise",
+            "text": "To exercise your rights under LGPD, please contact us."
+        }
+    }
+}
