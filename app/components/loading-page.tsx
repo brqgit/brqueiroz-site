@@ -1,17 +1,13 @@
 import { useEffect } from "react"
-import { useNavigate } from "react-router"
 
 export default function LoadingPage() {
-  const navigate = useNavigate()
-
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("./home")
       window.location.href = "/home";
     }, 3000)
 
     return () => clearTimeout(timer)
-  }, [navigate])
+  }, [])
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-background bg-gray-950 text-whites">
