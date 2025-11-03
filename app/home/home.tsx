@@ -11,6 +11,7 @@ import ServiceCard from "~/components/service-card";
 import StatCard from "~/components/star-card";
 import TestimonialCard from "~/components/testimonial-card";
 import { Carousel } from "~/components/carousel";
+import ThirdPartyPostsSection from "~/components/thrid-party-posts";
 
 import { getAllServices } from "~/lib/services";
 import { getAllTestimonials } from "~/lib/testimonials";
@@ -28,6 +29,8 @@ export default function HomePage() {
     return (
         <>
             <LogoCarousel />
+            <ThirdPartyPostsSection />
+
             <section id="about-us" className="py-16 px-4 md:px-8 lg:px-16 bg-white overflow-hidden">
                 <motion.div
                     className="max-w-7xl mx-auto"
@@ -133,17 +136,17 @@ export default function HomePage() {
                                     >
                                         <img src="/about/33.png" alt="Imagem 4" className="w-full h-full object-cover rounded-lg shadow-lg" />
                                         <div className="absolute -bottom-2 -left-4 bg-[#1e6cd3] p-2 rounded-lg text-white w-fit max-w-[90%]">
-                                            <p 
+                                            <p
                                             className="
                                                 text-[14px] font-bold
-                                                lg:text-[11px] 
-                                                laptop:text-[14px] 
+                                                lg:text-[11px]
+                                                laptop:text-[14px]
                                             "
                                             >{t("about.ceo-founder-title")}</p>
-                                            <p 
+                                            <p
                                             className="
                                                 text-[11px] uppercase
-                                                lg:text-[9px] 
+                                                lg:text-[9px]
                                                 laptop:text-[11px]
                                             "
                                             >Valdemir José de Queiroz</p>
@@ -170,7 +173,7 @@ export default function HomePage() {
                         <div className="mt-12 text-center">
                             <button
                                 className="
-                                inline-flex items-center justify-center px-6 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-medium text-base transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 transform hover:scale-105 
+                                inline-flex items-center justify-center px-6 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white font-medium text-base transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-300 transform hover:scale-105
                                 laptop:mt-10
                                 "
                                 onClick={() => setShowAbout(true)}
