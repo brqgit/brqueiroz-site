@@ -1,6 +1,5 @@
 name: Build and deploy Node.js app to Azure Web App - brqueiroz
 
-# Trigger on pushes to homologation branch and manual dispatch
 on:
   push:
     branches:
@@ -25,7 +24,6 @@ jobs:
         run: npm ci
 
       - name: Build
-        # adjust this to your actual build command (e.g. npm run build)
         run: npm run build --if-present
 
       - name: Verify build output (for debugging)
@@ -36,23 +34,38 @@ jobs:
           ls -la ./build || true
           ls -la ./dist || true
 
+      - name: Prepare artifact
+        run: |
+          set -e
+          rm -rf node-app node-app.zip || true
+          if [ -d ./build ]; then
+            cp -r ./build node-app
+          elif [ -d ./dist ]; then
+            cp -r ./dist node-app
+          else
+            echo "ERROR: No build output found in ./build or ./dist"
+            ls -la
+            exit 1
+          fi
+
+      - name: Create artifact zip
+        run: |
+          cd node-app
+          zip -r ../node-app.zip .
+          cd ..
+
       - name: Upload node app artifact
         uses: actions/upload-artifact@v4
         with:
-          # MUST match the download step below exactly
           name: node-app
-          # Set this to the folder that contains your build output.
-          # If your build outputs to ./build or ./dist, include it here.
-          path: |
-            ./build
-            ./dist
+          path: node-app.zip
 
   deploy:
     name: Deploy to Azure Web App
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: 'homologation'   # optional: environment name in GitHub
+      name: 'homologation'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url || '' }}
 
     steps:
@@ -62,25 +75,18 @@ jobs:
       - name: Download node app artifact
         uses: actions/download-artifact@v4
         with:
-          # Must match the name used by upload-artifact
           name: node-app
-          # Optional: extract into a folder named node-app in the workspace
           path: node-app
 
       - name: Show downloaded artifact (debug)
         run: |
           echo "Contents of downloaded artifact folder:"
           ls -la node-app || true
-          # if artifact had nested folders, list them too
           find node-app -maxdepth 3 -print || true
 
       - name: Deploy to Azure Web App
-        # choose the version you prefer; v3 is commonly used. v2/v3 both available.
         uses: azure/webapps-deploy@v3
         with:
-          # Replace with your actual App Service name
           app-name: YOUR_AZURE_WEBAPP_NAME
-          # Use the publish profile secret stored in repo/org secrets
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          # Point to the folder or zip to deploy. If your artifact created a folder, adjust accordingly:
-          package: node-app
+          package: node-app/node-app.zip
