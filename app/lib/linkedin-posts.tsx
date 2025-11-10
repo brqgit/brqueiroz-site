@@ -29,7 +29,7 @@ export async function getPostsLinkedinAPI(): Promise<Article[]> {
       title,
       description,
       image: item.imageUrls[0] || "",
-      link: `https://www.linkedin.com/posts/${item.id}`,
+      link: `https://www.linkedin.com/feed/update/${item.id}`,
     };
   });
 }
