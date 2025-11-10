@@ -2,22 +2,26 @@ import { Trans, useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-import { getAllArticles } from "~/lib/articles";
+import { getAllFeaturedArticles } from "~/lib/featured-posts";
+
 import Card from "./card";
 
 export default function AppHeader() {
     const { t } = useTranslation();
 
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const slides = getAllArticles()
+    const slides = getAllFeaturedArticles()
 
     useEffect(() => {
+      if (isModalOpen) return;
+
         const interval = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % slides.length);
-        }, 4000);
+        }, 6000);
         return () => clearInterval(interval);
-    }, [slides.length]);
+    }, [slides.length, isModalOpen]);
 
 
     return (
@@ -40,7 +44,7 @@ export default function AppHeader() {
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true, amount: 0.2 }}
             >
-                <div className="relative flex justify-center p-5 z-1 w-full">
+                <div className="relative flex justify-center p-5 w-full">
                     <div className="w-full lg:w-[80%] max-w-[1200px] flex justify-between p-5 flex-col md:flex-row">
                         <motion.div
                             className="md:w-[45%]"
@@ -121,12 +125,14 @@ export default function AppHeader() {
                                 <Card
                                     imageSrc={slides[currentSlide].image}
                                     imageAlt="Product image"
+                                    media={slides[currentSlide].media}
                                     title={t(slides[currentSlide].title)}
                                     description={t(slides[currentSlide].description)}
                                     content={t(slides[currentSlide].content)}
                                     link={slides[currentSlide].link}
                                     buttonText={t("learn-more")}
-                                    onButtonClick={() => alert("Button clicked!")}
+                                    onButtonClick={() => setIsModalOpen(true)}
+                                    onModalStateChange={setIsModalOpen}
                                     className="mb-4"
                                 />
                                 <div className="w-auto max-w-md flex justify-center mt-4 w-[300px]">
