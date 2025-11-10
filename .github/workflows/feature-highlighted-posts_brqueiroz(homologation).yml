@@ -1,0 +1,92 @@
+name: Build and deploy Node.js app to Azure Web App - brqueiroz
+
+on:
+  push:
+    branches:
+      - 'homologation'
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 18
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build --if-present
+
+      - name: Verify build output (for debugging)
+        run: |
+          echo "Listing workspace:"
+          ls -la
+          echo "Listing possible outputs:"
+          ls -la ./build || true
+          ls -la ./dist || true
+
+      - name: Prepare artifact
+        run: |
+          set -e
+          rm -rf node-app node-app.zip || true
+          if [ -d ./build ]; then
+            cp -r ./build node-app
+          elif [ -d ./dist ]; then
+            cp -r ./dist node-app
+          else
+            echo "ERROR: No build output found in ./build or ./dist"
+            ls -la
+            exit 1
+          fi
+
+      - name: Create artifact zip
+        run: |
+          cd node-app
+          zip -r ../node-app.zip .
+          cd ..
+
+      - name: Upload node app artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: node-app
+          path: node-app.zip
+
+  deploy:
+    name: Deploy to Azure Web App
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: 'homologation'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url || '' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download node app artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: node-app
+          path: node-app
+
+      - name: Show downloaded artifact (debug)
+        run: |
+          echo "Contents of downloaded artifact folder:"
+          ls -la node-app || true
+          find node-app -maxdepth 3 -print || true
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: YOUR_AZURE_WEBAPP_NAME
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: node-app/node-app.zip
