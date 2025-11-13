@@ -132,6 +132,15 @@ export default function Card({
           alt={imageAlt}
           className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
         />
+        {link.includes("tiinside") &&
+          <div className="absolute top-2 right-2">
+            <img
+              src="/brands/logo_ti_2024.png"
+              alt="Logo"
+              className="h-7"
+            />
+          </div>
+        }
       </div>
       <div className="p-5 flex-1 flex flex-col">
         <h3 className="mb-1 text-xl font-bold text-gray-900">{title}</h3>
