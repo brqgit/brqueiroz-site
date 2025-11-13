@@ -1,5 +1,5 @@
 import { Trans, useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Award, CheckCircle, Clock, Users, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -11,25 +11,85 @@ import ServiceCard from "~/components/service-card";
 import StatCard from "~/components/star-card";
 import TestimonialCard from "~/components/testimonial-card";
 import { Carousel } from "~/components/carousel";
-import ThirdPartyPostsSection from "~/components/thrid-party-posts";
+import ThirdPartyCard from "~/components/thrid-party-card";
 
 import { getAllServices } from "~/lib/services";
 import { getAllTestimonials } from "~/lib/testimonials";
+import { getPostsLinkedinAPI } from "~/lib/linkedin-posts";
 
 import type { Testimonial } from "~/types/testimonials";
+import type { LinkedinPost } from "~/lib/linkedin-posts";
 
 export default function HomePage() {
     const { t } = useTranslation();
     const services = getAllServices(t);
     const testimonials = getAllTestimonials(t);
+    const [linkedinPosts, setLinkedinPosts] = useState<LinkedinPost[]>([]);
     const [selectedTestimonial, setSelectedTestimonial] = useState<Testimonial | null>(null);
     const [showAbout, setShowAbout] = useState(false);
     const [showCase, setShowCase] = useState(false);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState<string | null>(null);
+
+    useEffect(() => {
+      getPostsLinkedinAPI()
+        .then((posts) => {
+          console.log(posts)
+          setLinkedinPosts(posts);
+          setLoading(false);
+        })
+        .catch((err) => setError(err.message));
+    }, []);
 
     return (
         <>
             <LogoCarousel />
-            <ThirdPartyPostsSection />
+
+            <section className="py-16 px-4 md:px-8 lg:px-16 bg-[#0a1525]">
+              <motion.div
+                  className="max-w-7xl mx-auto"
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true, amount: 0.2 }}
+              >
+                <h2 className="text-center text-3xl font-bold mb-10 text-white">
+                  POSTS EM <span className="text-blue-600">DESTAQUES</span>
+                </h2>
+                <Carousel
+                  itemsPerPage={2}
+                  autoPlayInterval={6000}
+                  showArrows={false}
+                  className="max-w-6xl mx-auto"
+                >
+                {linkedinPosts.length === 0
+                  ? Array.from({ length: 5 }).map((_, idx) => (
+                    <ThirdPartyCard
+                      key={idx}
+                      title=""
+                      description=""
+                      fullDescription=""
+                      image=""
+                      postReshare={{ image: "" }}
+                      link=""
+                      loading={true}
+                    />
+                  ))
+                  : linkedinPosts.map((linkedinPost, idx) => (
+                    <ThirdPartyCard
+                      key={idx}
+                      title={linkedinPost.title}
+                      description={linkedinPost.description}
+                      fullDescription={linkedinPost.fullDescription}
+                      image={linkedinPost.image}
+                      postReshare={linkedinPost.postReshare}
+                      link={linkedinPost.link}
+                      loading={loading}
+                    />
+                  ))}
+                </Carousel>
+              </motion.div>
+            </section>
 
             <section id="about-us" className="py-16 px-4 md:px-8 lg:px-16 bg-white overflow-hidden">
                 <motion.div
