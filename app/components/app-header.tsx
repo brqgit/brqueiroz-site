@@ -122,19 +122,28 @@ export default function AppHeader() {
                             viewport={{ once: true, amount: 0.2 }}
                         >
                             <div className="w-full overflow-hidden relative flex flex-col items-center justify-center">
+                              <motion.div
+                                key={currentSlide}
+                                initial={{ opacity: 0, x: 50 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                exit={{ opacity: 0, x: -50 }}
+                                transition={{ duration: 0.5 }}
+                                className="w-full overflow-hidden relative flex flex-col items-center justify-center"
+                              >
                                 <Card
-                                    imageSrc={slides[currentSlide].image}
-                                    imageAlt="Product image"
-                                    media={slides[currentSlide].media}
-                                    title={t(slides[currentSlide].title)}
-                                    description={t(slides[currentSlide].description)}
-                                    content={t(slides[currentSlide].content)}
-                                    link={slides[currentSlide].link}
-                                    buttonText={t("learn-more")}
-                                    onButtonClick={() => setIsModalOpen(true)}
-                                    onModalStateChange={setIsModalOpen}
-                                    className="mb-4"
-                                />
+                                      imageSrc={slides[currentSlide].image}
+                                      imageAlt="Product image"
+                                      media={slides[currentSlide].media}
+                                      title={t(slides[currentSlide].title)}
+                                      description={t(slides[currentSlide].description)}
+                                      content={t(slides[currentSlide].content)}
+                                      link={slides[currentSlide].link}
+                                      buttonText={t("learn-more")}
+                                      onButtonClick={() => setIsModalOpen(true)}
+                                      onModalStateChange={setIsModalOpen}
+                                      className="mb-4"
+                                  />
+                              </motion.div>
                                 <div className="w-auto max-w-md flex justify-center mt-4 w-[300px]">
                                     {slides.map((_, index) => (
                                         <button
