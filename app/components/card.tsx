@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { useState, useEffect } from "react";
-import { X, Play } from "lucide-react";
+import { X, Play, Divide } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface CardProps {
@@ -132,15 +132,6 @@ export default function Card({
           alt={imageAlt}
           className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
         />
-        {link.includes("tiinside") &&
-          <div className="absolute top-2 right-2">
-            <img
-              src="/brands/logo_ti_2024.png"
-              alt="Logo"
-              className="h-7"
-            />
-          </div>
-        }
       </div>
       <div className="p-5 flex-1 flex flex-col">
         <h3 className="mb-1 text-xl font-bold text-gray-900">{title}</h3>
@@ -163,15 +154,26 @@ export default function Card({
           )}
         </div>
       </div>
-      <div className="flex justify-end px-5 pb-5">
-        <button
-          className="rounded-md bg-[#1c5abd] px-4 py-2 text-sm font-medium text-white hover:bg-[#1a4fa8] focus:outline-none focus:ring-2 focus:ring-[#1c5abd] focus:ring-offset-2"
-          onClick={() => {
-            if (link) window.open(link, "_blank");
-          }}
-        >
-          {buttonText}
-        </button>
+      <div className="flex justify-between items-center px-5 pb-5">
+        {link.includes("tiinside") &&
+          <div className=" bg-[#dd0000] w-[130px] rounded-[5px] flex justify-center items-center">
+            <img
+              src="/brands/logo_ti_2024.png"
+              alt="Logo"
+              className="h-10"
+            />
+          </div>
+        }
+        <div>
+          <button
+            className="rounded-md bg-[#1c5abd] px-4 py-2 text-sm font-medium text-white hover:bg-[#1a4fa8] focus:outline-none focus:ring-2 focus:ring-[#1c5abd] focus:ring-offset-2"
+            onClick={() => {
+              if (link) window.open(link, "_blank");
+            }}
+          >
+            {buttonText}
+          </button>
+        </div>
       </div>
     </div>
   );
