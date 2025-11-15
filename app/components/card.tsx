@@ -124,7 +124,7 @@ export default function Card({
 
   return (
     <div
-      className={`w-full max-w-md min-h-[540px] max-h-[540px] overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-all hover:shadow-lg flex flex-col ${className}`}
+      className={`w-full max-w-md min-h-[540px] max-h-[580px] overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm transition-all hover:shadow-lg flex flex-col ${className}`}
     >
       <div className="w-full min-h-[220px] max-h-[220px] overflow-hidden">
         <img

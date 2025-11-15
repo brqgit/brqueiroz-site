@@ -20,9 +20,9 @@ export default function ThirdPartyCard({ idx, title, description, fullDescriptio
     return (
       <div
         key={idx}
-        className="group relative flex min-w-[500px] h-64 overflow-hidden rounded-2xl border border-border bg-white shadow-lg max-w-lg mx-auto"
+        className="group relative flex flex-col md:flex-row md:min-w-[500px] w-85 h-90 md:h-64 overflow-hidden rounded-2xl border border-border bg-white shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] max-w-lg mx-auto mt-4 md:mt-0"
       >
-        <div className="relative h-64 w-48 flex-shrink-0 overflow-hidden">
+        <div className="relative h-36 w-full md:w-48 md:h-64 flex-shrink-0 overflow-hidden">
           <Skeleton
             height="100%"
             width="100%"
@@ -30,7 +30,7 @@ export default function ThirdPartyCard({ idx, title, description, fullDescriptio
           />
         </div>
 
-        <div className="flex flex-1 flex-col justify-between p-6">
+        <div className="flex flex-1 flex-col justify-between p-3 md:p-6">
           <div>
             <Skeleton height={24} width="80%" className="mb-2" />
             <Skeleton height={16} width="100%" className="mb-1" />
@@ -46,9 +46,9 @@ export default function ThirdPartyCard({ idx, title, description, fullDescriptio
   return (
     <div
       key={idx}
-      className="group relative flex min-w-[500px] h-64 overflow-hidden rounded-2xl border border-border bg-white shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] max-w-lg mx-auto"
+      className="group relative flex flex-col md:flex-row md:min-w-[500px] w-85 h-90 md:h-64 overflow-hidden rounded-2xl border border-border bg-white shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] max-w-lg mx-auto mt-4 md:mt-0"
     >
-      <div className="relative h-64 w-48 flex-shrink-0 overflow-hidden">
+      <div className="relative h-36 w-full md:w-48 md:h-64 flex-shrink-0 overflow-hidden">
         <img
           src={postReshare?.image || image}
           alt={title}
@@ -57,14 +57,14 @@ export default function ThirdPartyCard({ idx, title, description, fullDescriptio
         <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card/20"></div>
       </div>
 
-      <div className="flex flex-1 flex-col justify-between p-6">
+      <div className="flex flex-1 flex-col justify-between p-3 md:p-6">
         {link.includes("linkedin.com") && (
           <Linkedin className="absolute top-2 right-2 w-6 h-6 text-[#1c5abd] z-10" />
         )}
 
         <div>
           {!postReshare.image && (
-            <h3 className="text-balance text-xl font-bold text-foreground">
+            <h3 className="text-base font-bold text-foreground">
               {title}
             </h3>
           )}
