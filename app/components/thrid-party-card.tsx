@@ -48,14 +48,16 @@ export default function ThirdPartyCard({ idx, title, description, fullDescriptio
       key={idx}
       className="group relative flex flex-col md:flex-row md:min-w-[500px] w-85 h-90 md:h-64 overflow-hidden rounded-2xl border border-border bg-white shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] max-w-lg mx-auto mt-4 md:mt-0"
     >
-      <div className="relative h-36 w-full md:w-48 md:h-64 flex-shrink-0 overflow-hidden">
-        <img
-          src={postReshare?.image || image}
-          alt={title}
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card/20"></div>
-      </div>
+      {(postReshare?.image || image) && (
+        <div className="relative h-36 w-full md:w-48 md:h-64 flex-shrink-0 overflow-hidden">
+          <img
+            src={postReshare?.image || image}
+            alt={title}
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-card/20"></div>
+        </div>
+      )}
 
       <div className="flex flex-1 flex-col justify-between p-3 md:p-6">
         {link.includes("linkedin.com") && (

@@ -26,11 +26,11 @@ export async function getPostsLinkedinAPI(): Promise<LinkedinPost[]> {
       description = item.text.substring(titleMatch[0].length).trim();
     }
 
-    if (description.length > 140) {
+    if (description !== undefined && description.length > 140) {
       description = description.substring(0, 140) + "...";
     }
 
-    if (fullDescription.length > 190) {
+    if (fullDescription !== undefined && fullDescription.length > 190) {
       fullDescription = fullDescription.substring(0, 190) + "...";
     }
 

@@ -29,7 +29,6 @@ export default function HomePage() {
     const [showAbout, setShowAbout] = useState(false);
     const [showCase, setShowCase] = useState(false);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
       getPostsLinkedinAPI()
@@ -38,7 +37,7 @@ export default function HomePage() {
           setLinkedinPosts(posts);
           setLoading(false);
         })
-        .catch((err) => setError(err.message));
+        .catch((err) => console.error(err.message));
     }, []);
 
     return (
@@ -63,7 +62,7 @@ export default function HomePage() {
                   className="max-w-6xl mx-auto"
                 >
                 {linkedinPosts.length === 0
-                  ? Array.from({ length: 5 }).map((_, idx) => (
+                  ? Array.from({ length: 6 }).map((_, idx) => (
                     <ThirdPartyCard
                       key={idx}
                       title=""
@@ -76,16 +75,18 @@ export default function HomePage() {
                     />
                   ))
                   : linkedinPosts.map((linkedinPost, idx) => (
-                    <ThirdPartyCard
-                      key={idx}
-                      title={linkedinPost.title}
-                      description={linkedinPost.description}
-                      fullDescription={linkedinPost.fullDescription}
-                      image={linkedinPost.image}
-                      postReshare={linkedinPost.postReshare}
-                      link={linkedinPost.link}
-                      loading={loading}
-                    />
+                    linkedinPost.title && linkedinPost.description &&  (
+                      <ThirdPartyCard
+                        key={idx}
+                        title={linkedinPost.title}
+                        description={linkedinPost.description}
+                        fullDescription={linkedinPost.fullDescription}
+                        image={linkedinPost.image}
+                        postReshare={linkedinPost.postReshare}
+                        link={linkedinPost.link}
+                        loading={loading}
+                      />
+                    )
                   ))}
                 </Carousel>
               </motion.div>
